@@ -19,35 +19,44 @@ export default class Stack extends Component {
       },
       {
         title: 'Bootstrap',
-        imageUrl: 'https://msatechnosoft.in/blog/wp-content/uploads/2018/06/bootstrap-png-MSA-Technosoft.png',
-        shortDescription: 'The most popular CSS Framework for developing responsive, mobile-first websites.',
-        longDescription: 'Bootstrap is a free and open-source front-end Web framework. It contains HTML and CSS-based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.',
+        imageUrl: 'http://pluspng.com/img-png/bootstrap-logo-vector-png-bootstrap-logo-512.jpg',
+        shortDescription: 'Styles for developing responsive, mobile-first design.',
+        longDescription: 'Bootstrap contains HTML and CSS-based design templates for typography, forms, buttons an d navigation, as well as optional JavaScript extensions.',
         homepage: 'https://www.getbootstrap.com/'
       }
     ]
 
-
+    // style={{width: '18rem'}}
     const mappedFrontEnd = frontEndStack.map((item,index) =>
 
-          <div className="card" style={{width: '18rem'}} key={index}>
-            <img className="card-img-top responsive"  src={item.imageUrl} alt="Card top/cap" />
+          <div className="card"  key={index} style={{width: '18rem'}}>
+            <div className='card-header'>
+                <h5>{item.title}</h5>
+            </div>
+            <img className="card-img-top responsive" src={item.imageUrl} alt="Card top/cap" />
             <div className="card-body">
-
-              <h5 className="card-title">{item.title}</h5>
-
               <hr/>
-
               <h6 className="card-subtitle mb-2 text-muted">{item.shortDescription}</h6>
-
               <hr/>
-
               <p className="card-text">{item.longDescription}</p>
-
-              <div class="card-footer">
-                <a href={item.homepage} className='btn btn-primary btn-large'>See the docs</a>
-              </div>
+               <div className='card-footer'>
+                <a href={item.homepage} className='btn btn-primary'>See the docs</a>
+                </div>
             </div>
           </div>
+
+
+
+
+
+      
+
+
+
+
+
+
+
 
       )
 
@@ -55,7 +64,7 @@ export default class Stack extends Component {
       <div className='container container-fluid ' id='front-end-stack'>
         <h1 className='text-center'>Front-End Stack</h1>
         <hr/>
-        <div className='container container-fluid card-deck'>
+        <div className='container container-fluid card-group'>
           {mappedFrontEnd}
         </div>
       </div>
