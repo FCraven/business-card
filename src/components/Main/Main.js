@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Stack from '../Main/Stack/Stack'
+import FrontEndStack from './Stack/FrontEndStack'
+
 
 export default class Main extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ export default class Main extends Component {
             title: 'React',
             imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
             shortDescription: 'A JavaScript library for building user interfaces',
-            longDescription: 'React is maintained by Facebook and a community of developers. React is usedas a  base in the development of single-page or mobile applications.',
+            longDescription: 'React is maintained by Facebook and a community of developers. React is used as a  base in the development of single-page or mobile applications.',
             homepage: 'https://reactjs.org/'
         },
         {
@@ -36,7 +37,7 @@ export default class Main extends Component {
   render() {
     return (
       <div className='card-group'>
-        <Stack frontEndStack={this.state.frontEndStack} />
+        <FrontEndStack frontEndStack={this.state.frontEndStack} />
       </div>
     )
   }
