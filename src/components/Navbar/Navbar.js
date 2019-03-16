@@ -8,9 +8,9 @@ export default class Navbar extends Component {
     return (
       <div className='container container-fluid justify-content-center'>
         <nav className="navbar fixed-bottom navbar-light bg-info ">
-          <NavLink className="btn btn-warning" role="button" to="FrankCravenResume.pdf" download="FrankCravenResume">
+          <a className="btn btn-warning"  role="button" href="FrankCravenResume.pdf" download="FrankCravenResume">
             Download My Resume!
-          </NavLink>
+          </a>
 
 
 
