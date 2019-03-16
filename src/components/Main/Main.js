@@ -36,9 +36,10 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div className='bg-dark'>
+      <div className='container container-fluid card-group bg-dark'>
         <FrontEndStack frontEndStack={this.state.frontEndStack} />
       </div>
+
     )
   }
 }
