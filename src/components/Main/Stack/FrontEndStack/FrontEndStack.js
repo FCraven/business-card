@@ -4,7 +4,7 @@ const FrontEndStack =(props)=> {
   console.log(props)
   return (
     <div>
-
+      
     </div>
   )
 }
