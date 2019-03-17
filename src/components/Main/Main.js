@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import FrontEndStack from './Stack/FrontEndStack'
+
 
 
 export default class Main extends Component {
@@ -36,8 +36,8 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div className='container container-fluid card-group bg-dark'>
-        <FrontEndStack frontEndStack={this.state.frontEndStack} />
+      <div className='test text-white'>
+        <p>whatnow?</p>
       </div>
 
     )
