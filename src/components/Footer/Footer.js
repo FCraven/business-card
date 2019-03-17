@@ -2,19 +2,12 @@ import React from 'react'
 
 const Footer =()=> {
   return (
-    <div className='footer container container-fluid'>
 
-      <footer class="footer">
-        <div class="container text-center">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-google-plus"></i></a>
-          <a href="#"><i class="fa fa-skype"></i></a>
-        </div>
-      </footer>
 
-    </div>
+
+      <div className="footer navbar fixed-bottom bg-info">
+      <a className="btn-floating btn-lg btn-li" type="button" role="button" href='/home'><i class="fab fa-linkedin-in"></i></a>
+      </div>
   )
 }
 
