@@ -27,10 +27,9 @@ export default class Navbar extends Component {
         <nav className="navbar fixed-top navbar-light bg-info navbar-expand-md">
 
           <NavLink className='nav-link navbar-brand' to='/'>
-            <h2 id='navbar-name' className='nav-text text-warning nav-link'>
-            <img className='img-fluid ' src='favicon.ico' alt='SeaBird in flight' style={{height:60, width:60}} />
-              Frank<b>Craven</b>
-            </h2>
+            <h5 id='navbar-name' className='nav-text text-warning nav-link'>
+              Frank<b> Craven</b>
+            </h5>
           </NavLink>
 
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type='button' data-toggle='collapse' data-target='#navbarResponsive'>

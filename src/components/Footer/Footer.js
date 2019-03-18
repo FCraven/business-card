@@ -5,9 +5,9 @@ const Footer = () => {
     <nav className="navbar fixed-bottom bg-info">
 
       <div className='footer-social'>
-          <div className='text-center text-warning'>
+          {/* <div className='text-center text-warning'>
             <b>Social Presence</b>
-          </div>
+          </div> */}
 
             <button type="button"
                     className="btn btn-outline-warning m-1 p-2"
@@ -31,9 +31,9 @@ const Footer = () => {
 
       <div id='footer-contact'>
 
-        <div className='text-center text-warning'>
+        {/* <div className='text-center text-warning'>
           <b>Contact</b>
-        </div>
+        </div> */}
 
           <a className="btn text-warning m-1 p-2" href="FrankCravenResume.pdf" download="FrankCravenResume">
             <button type="button"
