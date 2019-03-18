@@ -38,7 +38,7 @@ const Footer = () => {
           <a className="btn text-warning m-1 p-2" href="FrankCravenResume.pdf" download="FrankCravenResume">
             <button type="button"
                     className="btn btn-outline-warning">
-                    <small className='text-warning'><b>Resume </b></small>
+                    <small><b>Resume </b></small>
                     <i className="fas fa-file-download"></i>
             </button>
           </a>
@@ -46,7 +46,7 @@ const Footer = () => {
           <a className="btn text-warning m-1 p-2" href="mailto:craven.francis@gmail.com?subject=Let's get in touch!">
             <button type="button"
                     className="btn btn-outline-warning">
-                    <small className='text-warning'><b>E-Mail </b></small>
+                    <small><b>E-Mail </b></small>
                     <b><i className="far fa-envelope"></i></b>
             </button>
           </a>
