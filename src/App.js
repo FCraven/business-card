@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 class App extends Component {
   render() {
     return (
-      <div className="bg-dark cover-container container-fluid mx-auto h-100 w-100 d-flex">
+      <div className="jumbotron">
         <Navbar />
         <Main />
         <Footer />

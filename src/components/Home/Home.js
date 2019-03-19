@@ -11,8 +11,15 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div>
-        <h1>I am the home component.</h1>
+      <div className='carousel'>
+        
+       <p>Hello World 1 </p>
+       <p>Hello World 2 </p>
+       <p>Hello World 3 </p>
+       <p>Hello World  4</p>
+       <p>Hello World 5</p>
+       <p>Hello World 6</p>
+
       </div>
     )
   }

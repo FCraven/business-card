@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-// import AboutMe from './AboutMe'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from '../Home'
+// import Languages from '../Languages'
+// import Libraries from '../Libraries'
 
 
 
@@ -37,9 +40,21 @@ export default class Main extends Component {
 
   render() {
     return (
-      <div className='test text-white'>
-        <p>whatnow?</p>
-      </div>
+      <Switch>
+        <Router>
+          <div className='test text-white'>
+            <p>whatnow?</p>
+
+
+
+            <Route exact path='/' component={Home} />
+            {/* <Route path='/projects' component={Projects}/> */}
+            {/* <Route path='/languages' component={Languages} /> */}
+            {/* <Route path='/libraries' component={Libraries} /> */}
+            {/* <Route path='/education' component={Education} /> */}
+          </div>
+        </Router>
+      </Switch>
 
     )
   }
