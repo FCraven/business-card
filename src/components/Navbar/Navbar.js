@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Navbar.css'
 import { NavLink } from 'react-router-dom'
 
 export default class Navbar extends Component {
@@ -27,9 +28,9 @@ export default class Navbar extends Component {
         <nav className="navbar fixed-top navbar-light bg-info navbar-expand-md">
 
           <NavLink className='nav-link navbar-brand' to='/'>
-            <h5 id='navbar-name' className='nav-text text-warning nav-link'>
-              Frank<b> Craven</b>
-            </h5>
+            <h2 id='navbar-name' className='nav-text text-warning nav-link'>
+              Frank Craven
+            </h2>
           </NavLink>
 
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type='button' data-toggle='collapse' data-target='#navbarResponsive'>
@@ -38,6 +39,10 @@ export default class Navbar extends Component {
 
           <div className={`${classOne}`} id='navbarResponsive'>
             <ul className="navbar-nav nav-list ml-auto">
+
+            <li className="nav-item">
+                <NavLink onClick={this.toggleNavbar} className="nav-link text-warning m-3" activeClassName='nav-link active btn-outline-warning' to="/projects"><b>Projects</b></NavLink>
+              </li>
 
               <li className="nav-item">
                 <NavLink onClick={this.toggleNavbar} className='nav-link text-warning m-3' activeClassName='nav-link active btn-outline-warning' to="/languages" ><b>Languages</b></NavLink>
@@ -48,16 +53,8 @@ export default class Navbar extends Component {
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className="nav-link text-warning m-3" activeClassName='nav-link active btn-outline-warning' to="/projects"><b>Projects</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className="nav-link text-warning m-3" activeClassName='nav-link active btn-outline-warning' to="/education"><b>Education</b></NavLink>
               </li>
-
-              <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className="nav-link text-warning navbar-dark m-3" activeClassName='nav-link active btn-outline-warning' to="/education"><b>Education</b></NavLink>
-              </li>
-
-
-
-
 
             </ul>
           </div>
