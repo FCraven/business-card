@@ -2,7 +2,6 @@ import React from 'react'
 import '../Footer.css'
 
 const Social =(props)=>{
-{
 
     const collapsedSocial = props.collapsedSocial
     const classOne = collapsedSocial ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
@@ -46,6 +45,6 @@ const Social =(props)=>{
     </div>
     )
   }
-}
+
 
 export default Social
