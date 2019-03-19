@@ -6,15 +6,22 @@ const Contact =(props)=> {
   const classOne = collapsedContact ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
   const classTwo = collapsedContact ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right'
 
-
-
-
-
-
-
   return (
 
     <div id='footer-contact'>
+
+      <nav className='navbar-expand-md'>
+
+      <button onClick={props.toggleContact}
+                    className={`${classTwo} btn btn-outline-warning col`}
+                    type='button'
+                    data-toggle='collapse'
+                    data-target='#footerContact'>
+              <span className='contact-button-text'><b> Contact </b></span>
+              <i className='fas fa-angle-double-down'></i>
+            </button>
+
+    <div id='footerContact' className={`${classOne}`}>
 
         <a className="btn text-warning m-1 p-2" href="FrankCravenResume.pdf" download="FrankCravenResume">
           <button type="button"
@@ -39,8 +46,9 @@ const Contact =(props)=> {
                   <b><i className="fas fa-phone"></i></b>
           </button>
         </a>
-
-        </div>
+      </div>
+      </nav>
+    </div>
   )
 }
 

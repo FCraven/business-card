@@ -12,16 +12,16 @@ const Social =(props)=>{
 
         <nav className='navbar-expand-md'>
 
-      <button onClick={props.toggleSocial}
-              className={`${classTwo} btn btn-outline-warning`}
-              type='button'
-              data-toggle='collapse'
-              data-target='#footerSocial'>
-        <i className='fas fa-angle-double-down'></i>
-        <span className='contact-button-text'><b> Social</b></span>
-      </button>
+            <button onClick={props.toggleSocial}
+                    className={`${classTwo} btn btn-outline-warning col`}
+                    type='button'
+                    data-toggle='collapse'
+                    data-target='#footerSocial'>
+              <i className='fas fa-angle-double-down'></i>
+              <span className='contact-button-text'><b> Social</b></span>
+            </button>
 
-      <div id='footerSocial' className={`${classOne}`}>
+          <div id='footerSocial' className={`${classOne}`}>
 
             <button type="button"
                     className="btn btn-outline-warning m-1 p-2"
