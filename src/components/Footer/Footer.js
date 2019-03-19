@@ -1,16 +1,18 @@
 import React, { Component} from 'react'
 import './Footer.css'
-
+import Social from './Social'
 export default class Footer extends Component {
   constructor(props){
     super(props)
     this.state  ={
       collapsedContact: true,
-      collapsedSocial:true
+      collapsedSocial: true
+
     }
 
     this.toggleContact = this.toggleContact.bind(this)
     this.toggleSocial = this.toggleSocial.bind(this)
+
   }
 
   toggleContact(){
@@ -26,36 +28,19 @@ export default class Footer extends Component {
   }
 
   render(){
+
+    const collapsedSocial = this.state.collapsedSocial
+    // const collapsedContact = this.state.collapsedContact
+
+
+
   return (
     <nav className="navbar fixed-bottom bg-info">
 
-      <div className='footer-social'>
-
-            <button type="button"
-                    className="btn btn-outline-warning m-1 p-2"
-                    onClick={()=> window.open('https://www.linkedin.com/in/frank-craven-ab1029b3/')}>
-                    <b><i className="fab fa-linkedin fa-2x"></i></b>
-            </button>
-
-            <button type="button"
-                    className="btn btn-outline-warning m-1 p-2"
-                    onClick={()=> window.open('https://www.github.com/FCraven')}>
-                    <b><i className="fab fa-github fa-2x"></i></b>
-            </button>
-
-            <button type="button"
-                    className="btn btn-outline-warning m-1 p-2"
-                    onClick={()=> window.open('https://www.instagram.com/francois_letanqa/')}>
-                    <b><i className="fab fa-instagram fa-2x"></i></b>
-            </button>
-        </div>
-
+      <Social collapsedSocial={collapsedSocial}
+              toggleSocial={this.toggleSocial} />
 
       <div id='footer-contact'>
-
-        {/* <div className='text-center text-warning'>
-          <b>Contact</b>
-        </div> */}
 
           <a className="btn text-warning m-1 p-2" href="FrankCravenResume.pdf" download="FrankCravenResume">
             <button type="button"
