@@ -23,7 +23,7 @@ export default class Navbar extends Component {
     const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-warning collapsed' : 'navbar-toggler navbar-toggler-right bg-warning'
 
     return (
-      <div className='container container-fluid justify-content-center'>
+      <div className='container container-fluid justify-content-center header-nav'>
 
         <nav className="navbar fixed-top navbar-light bg-info navbar-expand-md">
 

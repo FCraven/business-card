@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { Component} from 'react'
 import './Footer.css'
 
-const Footer = () => {
+export default class Footer extends Component {
+  constructor(props){
+    super(props)
+    this.state  ={
+      collapsedContact: true,
+      collapsedSocial:true
+    }
+
+    this.toggleContact = this.toggleContact.bind(this)
+    this.toggleSocial = this.toggleSocial.bind(this)
+  }
+
+  toggleContact(){
+    this.setState({
+      collapsedContact: !this.state.collapsedContact
+    })
+  }
+
+  toggleSocial(){
+    this.setState({
+      collapsedSocial: !this.state.collapsedSocial
+    })
+  }
+
+  render(){
   return (
     <nav className="navbar fixed-bottom bg-info">
 
       <div className='footer-social'>
-          {/* <div className='text-center text-warning'>
-            <b>Social Presence</b>
-          </div> */}
 
             <button type="button"
                     className="btn btn-outline-warning m-1 p-2"
@@ -63,7 +84,5 @@ const Footer = () => {
         </div>
 
       </nav>
-  )
+  )}
 }
-
-export default Footer
