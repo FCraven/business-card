@@ -27,16 +27,17 @@ export default class Navbar extends Component {
 
         <nav className="navbar fixed-top navbar-light bg-info navbar-expand-md">
 
+          {/* Title Name */}
           <NavLink className='nav-link navbar-brand' to='/'>
-            <h2 id='navbar-name' className='nav-text text-warning nav-link'>
-              Frank Craven
-            </h2>
+            <h2 id='navbar-name' className='nav-text text-warning nav-link'>Frank Craven</h2>
           </NavLink>
 
+          {/* Navbar Toggle Button Right  */}
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type='button' data-toggle='collapse' data-target='#navbarResponsive'>
             <span className='navbar-toggler-icon'></span>
           </button>
 
+          {/* Navigation List  */}
           <div className={`${classOne}`} id='navbarResponsive'>
             <ul className="navbar-nav nav-list ml-auto">
 

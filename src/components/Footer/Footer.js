@@ -6,10 +6,10 @@ import Contact from './Contact'
 export default class Footer extends Component {
   constructor(props){
     super(props)
+    
     this.state  ={
       collapsedContact: true,
       collapsedSocial: true
-
     }
 
     this.toggleContact = this.toggleContact.bind(this)

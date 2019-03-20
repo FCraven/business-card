@@ -12,9 +12,12 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className='jumbotron'>
-        <h2>stop messing with the jumbotron and get to work on finishing the responsiveness of the footer</h2>
+      <div className='hero-image'>
+          
+
       </div>
+
+
     )
   }
 }
