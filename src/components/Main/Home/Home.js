@@ -15,6 +15,7 @@ export default class Home extends Component {
       <div className='hero-image'>
           <div className='hero-text'>
             <h1>Hi! My name is Frank and I am a (typed section)</h1>
+            <button> Find out more!</button>
           </div>
       </div>
 

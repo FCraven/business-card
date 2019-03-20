@@ -34,7 +34,7 @@ export default class Navbar extends Component {
 
           {/* Navbar Toggle Button Right  */}
           <button onClick={this.toggleNavbar} className={`${classTwo}`} type='button' data-toggle='collapse' data-target='#navbarResponsive'>
-            <span className='navbar-toggler-icon'></span>
+            <span className='navbar-toggler-icon btn'></span>
           </button>
 
           {/* Navigation List  */}

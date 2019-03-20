@@ -40,21 +40,18 @@ export default class Main extends Component {
 
   render() {
     return (
-      <Switch>
-        <Router>
-          <div className='test text-white'>
-            <p>whatnow?</p>
+      <div className='main-component'>
+        <h1>I'm here</h1>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          {/* <Route path='/projects' component={Projects}/> */}
+          {/* <Route path='/languages' component={Languages} /> */}
+          {/* <Route path='/libraries' component={Libraries} /> */}
+          {/* <Route path='/education' component={Education} /> */}
+        </Switch>
+      </div>
 
 
-
-            <Route exact path='/' component={Home} />
-            {/* <Route path='/projects' component={Projects}/> */}
-            {/* <Route path='/languages' component={Languages} /> */}
-            {/* <Route path='/libraries' component={Libraries} /> */}
-            {/* <Route path='/education' component={Education} /> */}
-          </div>
-        </Router>
-      </Switch>
 
     )
   }
