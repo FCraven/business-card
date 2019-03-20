@@ -1,4 +1,7 @@
 .main-component{
-  padding-top: 65px;
-  background-color: black;
+  height:100%;
+  width: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
 }
