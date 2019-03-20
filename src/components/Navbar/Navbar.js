@@ -20,16 +20,21 @@ export default class Navbar extends Component {
   render() {
     const collapsed = this.state.collapsed;
     const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-warning collapsed' : 'navbar-toggler navbar-toggler-right bg-warning'
+    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-white collapsed' : 'navbar-toggler navbar-toggler-right bg-info'
 
     return (
       <div className='container container-fluid justify-content-center header-nav'>
 
-        <nav className="navbar fixed-top navbar-light bg-info navbar-expand-md">
+        <nav className="navbar fixed-top navbar-light bg-transparent navbar-expand-md">
 
           {/* Title Name */}
-          <NavLink className='nav-link navbar-brand' to='/'>
-            <h2 id='navbar-name' className='nav-text text-warning nav-link'>Frank Craven</h2>
+          <NavLink className='nav-link navbar-brand d-inline-block' to='/'>
+
+            <img src='/favicon.ico' className='img-fluid' style={{maxWidth:'50px'}} alt='A Raven'/>
+            <span id='navbar-name' className='text-white'><b>Frank Craven</b></span>
+
+            {/* <h2 id='navbar-name' className='nav-text text-white nav-link'>Frank Craven</h2> */}
+
           </NavLink>
 
           {/* Navbar Toggle Button Right  */}
@@ -42,19 +47,19 @@ export default class Navbar extends Component {
             <ul className="navbar-nav nav-list ml-auto">
 
             <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className="nav-link text-warning m-3" activeClassName='nav-link active btn-outline-warning' to="/projects"><b>Projects</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className="nav-link text-white m-3" activeClassName='nav-link active btn-outline-info' to="/projects"><b>Projects</b></NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className='nav-link text-warning m-3' activeClassName='nav-link active btn-outline-warning' to="/languages" ><b>Languages</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className='nav-link text-white m-3' activeClassName='nav-link active btn-outline-info' to="/languages" ><b>Languages</b></NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className='nav-link text-warning m-3' activeClassName='nav-link active btn-outline-warning' to="/libraries"><b>Libraries</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className='nav-link text-white m-3' activeClassName='nav-link active btn-outline-info' to="/libraries"><b>Libraries</b></NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className="nav-link text-warning m-3" activeClassName='nav-link active btn-outline-warning' to="/education"><b>Education</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className="nav-link text-white m-3" activeClassName='nav-link active btn-outline-info' to="/education"><b>Education</b></NavLink>
               </li>
 
             </ul>

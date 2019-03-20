@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { HashRouter as Route, Switch } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import './Main.css'
 import Home from './Home'
 // import Languages from '../Languages'
@@ -42,7 +42,6 @@ export default class Main extends Component {
   render() {
     return (
       <div className='main-component'>
-        <h1>I'm here</h1>
         <Switch>
           <Route exact path='/' component={Home} />
           {/* <Route path='/projects' component={Projects}/> */}

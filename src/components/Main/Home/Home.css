@@ -1,8 +1,11 @@
-.hero-image {
-  background-image: url('/hero-background.jpeg');
-  height:100%;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative
+.jumbotron {
+  opacity: 0.5;
+  border-radius: 20px;
+  z-index:-5;
+  height: 100%;
+  width: 100%;
+}
+
+.jumbotron-text{
+  z-index:1;
 }

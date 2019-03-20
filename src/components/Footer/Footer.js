@@ -6,7 +6,7 @@ import Contact from './Contact'
 export default class Footer extends Component {
   constructor(props){
     super(props)
-    
+
     this.state  ={
       collapsedContact: true,
       collapsedSocial: true
@@ -36,7 +36,7 @@ export default class Footer extends Component {
 
   return (
 
-    <nav className="navbar fixed-bottom bg-info">
+    <nav className="navbar fixed-bottom bg-secondary">
 
       <Social collapsedSocial={collapsedSocial}
               toggleSocial={this.toggleSocial} />

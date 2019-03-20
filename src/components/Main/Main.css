@@ -1,7 +1,9 @@
 .main-component{
-  height:100%;
+  height:auto;
   width: 100%;
   left: 0;
+  top: 81px;
+  bottom:43px;
   overflow: auto;
   position: fixed;
 }
