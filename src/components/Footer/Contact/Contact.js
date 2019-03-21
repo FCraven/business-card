@@ -23,7 +23,7 @@ const Contact =(props)=> {
 
     <div id='footerContact' className={`${classOne}`}>
 
-        <a className="btn text-warning m-1 p-2" href="FrankCravenResume.pdf" download="FrankCravenResume">
+        <a className="p-1 m-1" href="FrankCravenResume.pdf" download="FrankCravenResume">
           <button type="button"
                   className="btn btn-outline-light">
                   <small className='contact-button-text'><b>Resume </b></small>
@@ -31,7 +31,7 @@ const Contact =(props)=> {
           </button>
         </a>
 
-        <a className="btn text-warning m-1 p-2" href="mailto:craven.francis@gmail.com?subject=Let's get in touch!">
+        <a className="p-1 m-1" href="mailto:craven.francis@gmail.com?subject=Let's get in touch!">
           <button type="button"
                   className="btn btn-outline-light">
                   <small className='contact-button-text'><b>E-Mail </b></small>
@@ -39,7 +39,7 @@ const Contact =(props)=> {
           </button>
         </a>
 
-        <a className="btn text-warning m-1 p-2" href="tel:+19146028799">
+        <a className="m-1" href="tel:+19146028799">
           <button type="button"
                   className="btn btn-outline-light">
                   <small className='contact-button-text'><b>Call </b></small>

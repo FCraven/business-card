@@ -17,7 +17,8 @@ export default class Home extends Component {
 
           <h3 className='text-light'>Hi!</h3>
           <h2>My name is Frank</h2>
-          <p className='text-light'>I am Full Stack Developer </p>
+          <p className='text-light'>I'm a Full Stack Developer </p>
+          <p className='text-light'>and I'd like to help you see the forest <u>and</u> the trees</p>
           <button className='btn btn-outline-light'>Learn More</button>
         </div>
       </div>
