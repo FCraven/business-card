@@ -47,19 +47,19 @@ export default class Navbar extends Component {
             <ul className="navbar-nav nav-list ml-auto">
 
             <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className="nav-link text-white m-3" activeClassName='nav-link active btn-outline-info' to="/projects"><b>Projects</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className="nav-link text-white m-3" activeClassName='nav-link active btn-outline-secondary' to="/projects"><b>Projects</b></NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className='nav-link text-white m-3' activeClassName='nav-link active btn-outline-info' to="/languages" ><b>Languages</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className='nav-link text-white m-3' activeClassName='nav-link active btn-outline-secondary' to="/languages" ><b>Languages</b></NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className='nav-link text-white m-3' activeClassName='nav-link active btn-outline-info' to="/libraries"><b>Libraries</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className='nav-link text-white m-3' activeClassName='nav-link active btn-outline-secondary' to="/libraries"><b>Libraries</b></NavLink>
               </li>
 
               <li className="nav-item">
-                <NavLink onClick={this.toggleNavbar} className="nav-link text-white m-3" activeClassName='nav-link active btn-outline-info' to="/education"><b>Education</b></NavLink>
+                <NavLink onClick={this.toggleNavbar} className="nav-link text-white m-3" activeClassName='nav-link active btn-outline-secondary' to="/education"><b>Education</b></NavLink>
               </li>
 
             </ul>

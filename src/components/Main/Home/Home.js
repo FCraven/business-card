@@ -12,10 +12,13 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div className='jumbotron bg-secondary'>
-
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Hi! My name is Frank</h1>
+          <p>and I am Full Stack Developer </p>
+          <button>Learn More About Me!</button>
+        </div>
       </div>
-
 
     )
   }

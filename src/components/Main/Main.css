@@ -2,8 +2,8 @@
   height:auto;
   width: 100%;
   left: 0;
-  top: 81px;
-  bottom:43px;
+  top: 0;
+  bottom:0;
   overflow: auto;
   position: fixed;
 }

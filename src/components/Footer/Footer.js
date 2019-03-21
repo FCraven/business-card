@@ -36,7 +36,7 @@ export default class Footer extends Component {
 
   return (
 
-    <nav className="navbar fixed-bottom bg-secondary">
+    <nav className="navbar fixed-bottom bg-primary">
 
       <Social collapsedSocial={collapsedSocial}
               toggleSocial={this.toggleSocial} />
