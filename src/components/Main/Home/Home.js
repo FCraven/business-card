@@ -14,9 +14,11 @@ export default class Home extends Component {
     return (
       <div class="hero-image">
         <div class="hero-text">
-          <h1 className='text-primary'>Hi! My name is Frank</h1>
-          <p className='text-primary'>and I am Full Stack Developer </p>
-          <button>Learn More About Me!</button>
+
+          <h3 className='text-light'>Hi!</h3>
+          <h2>My name is Frank</h2>
+          <p className='text-light'>I am Full Stack Developer </p>
+          <button className='btn btn-outline-light'>Learn More</button>
         </div>
       </div>
 
