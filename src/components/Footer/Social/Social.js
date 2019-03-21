@@ -13,7 +13,7 @@ const Social =(props)=>{
         <nav className='navbar-expand-md'>
 
             <button onClick={props.toggleSocial}
-                    className={`${classTwo} btn btn-outline-light col`}
+                    className={`${classTwo} btn btn-outline-light col mb-3`}
                     type='button'
                     data-toggle='collapse'
                     data-target='#footerSocial'>

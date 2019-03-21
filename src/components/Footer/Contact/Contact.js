@@ -13,12 +13,12 @@ const Contact =(props)=> {
       <nav className='navbar-expand-md'>
 
       <button onClick={props.toggleContact}
-                    className={`${classTwo} btn btn-outline-light col`}
+                    className={`${classTwo} btn btn-outline-light mb-3`}
                     type='button'
                     data-toggle='collapse'
                     data-target='#footerContact'>
               <span className='contact-button-text'><b>Contact </b></span>
-              <i className={collapsedContact ? `fas fa-angle-double-up`:`fas fa-angle-double-down`} ></i>
+              <i className={collapsedContact ? `fas fa-angle-double-up`:`fas fa-angle-double-down`}></i>
             </button>
 
     <div id='footerContact' className={`${classOne}`}>

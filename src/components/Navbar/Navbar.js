@@ -20,7 +20,7 @@ export default class Navbar extends Component {
   render() {
     const collapsed = this.state.collapsed;
     const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-white collapsed' : 'navbar-toggler navbar-toggler-right bg-info'
+    const classTwo = collapsed ? 'navbar-toggler-light navbar-toggler-right bg-transparent collapsed' : 'navbar-toggler navbar-toggler-right bg-secondary'
 
     return (
       <div className='container container-fluid justify-content-center header-nav'>
@@ -37,9 +37,10 @@ export default class Navbar extends Component {
                   alt='A Raven'/>
 
               <span id='navbar-name'
-                    className='text-white'>
-                    <b>Frank Craven</b>
-            </span>
+                    className='text-light'>
+                    Frank Craven
+              </span>
+
           </NavLink>
 
           {/* Navbar Toggle Button Right  */}
@@ -58,7 +59,7 @@ export default class Navbar extends Component {
                 id='navbarResponsive'>
             <ul className="navbar-nav nav-list ml-auto">
 
-              <li className="nav-item">
+              <li className={collapsed? "nav-item" : "nav-item bg-dark ml-auto col-md-3 btn btn-sm navbar-menu-opacity"}>
                 <NavLink  onClick={this.toggleNavbar}
                           className="nav-link text-white m-3"
                           activeClassName='nav-link active btn-outline-secondary'
@@ -67,7 +68,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
+              <li className={collapsed? "nav-item" : "nav-item bg-dark ml-auto col-md-3 btn btn-sm navbar-menu-opacity"}>
                 <NavLink  onClick={this.toggleNavbar}
                           className='nav-link text-white m-3'
                           activeClassName='nav-link active btn-outline-secondary'
@@ -76,7 +77,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
+              <li className={collapsed? "nav-item" : "nav-item bg-dark ml-auto col-md-3 btn btn-sm navbar-menu-opacity"}>
                 <NavLink  onClick={this.toggleNavbar}
                           className='nav-link text-white m-3'
                           activeClassName='nav-link active btn-outline-secondary'
@@ -85,7 +86,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
+              <li className={collapsed?  "nav-item":"nav-item bg-dark ml-auto  col-md-3 btn btn-sm navbar-menu-opacity"}>
                 <NavLink  onClick={this.toggleNavbar}
                           className="nav-link text-white m-3"
                           activeClassName='nav-link active btn-outline-secondary'

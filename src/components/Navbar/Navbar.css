@@ -10,3 +10,7 @@
 .header-nav {
   z-index: 1000;
 }
+
+.navbar-menu-opacity {
+  opacity: 0.9;
+}
