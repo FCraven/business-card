@@ -11,6 +11,7 @@
   z-index: 1000;
 }
 
-.navbar-menu-opacity {
-  opacity: 0.9;
+.bg-dark {
+  background: linear-gradient(rgba(88, 88, 88, 0.527),transparent)!important;
+  opacity:0.5
 }

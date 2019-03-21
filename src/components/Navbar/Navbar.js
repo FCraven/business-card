@@ -20,12 +20,12 @@ export default class Navbar extends Component {
   render() {
     const collapsed = this.state.collapsed;
     const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsed ? 'navbar-toggler-light navbar-toggler-right bg-transparent collapsed' : 'navbar-toggler navbar-toggler-right bg-secondary'
+    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-light collapsed' : 'navbar-toggler navbar-toggler-right bg-secondary'
 
     return (
-      <div className='container container-fluid justify-content-center header-nav'>
+      <div className='container container-fluid header-nav'>
 
-        <nav className="navbar fixed-top navbar-light bg-transparent navbar-expand-md">
+        <nav className="navbar fixed-top navbar-light bg-dark navbar-expand-md">
 
           {/* Title Name */}
           <NavLink  className='nav-link navbar-brand d-inline-block'
@@ -37,9 +37,10 @@ export default class Navbar extends Component {
                   alt='A Raven'/>
 
               <span id='navbar-name'
-                    className='text-light'>
+                    className='text-light h2'>
                     Frank Craven
               </span>
+
 
           </NavLink>
 
@@ -59,37 +60,37 @@ export default class Navbar extends Component {
                 id='navbarResponsive'>
             <ul className="navbar-nav nav-list ml-auto">
 
-              <li className={collapsed? "nav-item" : "nav-item bg-dark ml-auto col-md-3 btn btn-sm navbar-menu-opacity"}>
+              <li className="nav-item">
                 <NavLink  onClick={this.toggleNavbar}
                           className="nav-link text-white m-3"
-                          activeClassName='nav-link active btn-outline-secondary'
+                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
                           to="/projects">
                           <b>Projects</b>
                 </NavLink>
               </li>
 
-              <li className={collapsed? "nav-item" : "nav-item bg-dark ml-auto col-md-3 btn btn-sm navbar-menu-opacity"}>
+              <li className="nav-item" >
                 <NavLink  onClick={this.toggleNavbar}
                           className='nav-link text-white m-3'
-                          activeClassName='nav-link active btn-outline-secondary'
+                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
                           to="/languages" >
                           <b>Languages</b>
                 </NavLink>
               </li>
 
-              <li className={collapsed? "nav-item" : "nav-item bg-dark ml-auto col-md-3 btn btn-sm navbar-menu-opacity"}>
+              <li className="nav-item" >
                 <NavLink  onClick={this.toggleNavbar}
                           className='nav-link text-white m-3'
-                          activeClassName='nav-link active btn-outline-secondary'
+                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
                           to="/libraries">
                           <b>Libraries</b>
                 </NavLink>
               </li>
 
-              <li className={collapsed?  "nav-item":"nav-item bg-dark ml-auto  col-md-3 btn btn-sm navbar-menu-opacity"}>
+              <li className='nav-item'>
                 <NavLink  onClick={this.toggleNavbar}
                           className="nav-link text-white m-3"
-                          activeClassName='nav-link active btn-outline-secondary'
+                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
                           to="/education">
                           <b>Education</b>
                 </NavLink>
