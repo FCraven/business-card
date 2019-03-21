@@ -37,7 +37,7 @@ export default class Navbar extends Component {
                   alt='A Raven'/>
 
               <span id='navbar-name'
-                    className='text-light h2'>
+                    className='text-light h4'>
                     Frank Craven
               </span>
 
