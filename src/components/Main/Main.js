@@ -35,7 +35,7 @@ export default class Main extends Component {
           homepage: 'https://www.getbootstrap.com/'
         }
       ],
-      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg']
+      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/sunset.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg']
     }
   }
 
