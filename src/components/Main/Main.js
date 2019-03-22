@@ -34,14 +34,24 @@ export default class Main extends Component {
           longDescription: 'Bootstrap contains HTML and CSS-based design templates for typography, forms, buttons an d navigation, as well as optional JavaScript extensions.',
           homepage: 'https://www.getbootstrap.com/'
         }
-      ]
+      ],
+      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg']
     }
   }
 
 
   render() {
+    const backgrounds = this.state.backgrounds;
+    const randomBackground = backgrounds[Math.floor(Math.random()*backgrounds.length)]
+
     return (
-      <div className='main-component'>
+      <div className='main-component' style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${randomBackground})`,
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        height:'100%'
+      }}>
         <Switch>
           <Route exact path='/' component={Home} />
           {/* <Route path='/projects' component={Projects}/> */}
