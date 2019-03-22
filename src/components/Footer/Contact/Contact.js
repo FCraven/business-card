@@ -4,7 +4,7 @@ const Contact =(props)=> {
 
   const collapsedContact = props.collapsedContact
   const classOne = collapsedContact ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-  const classTwo = collapsedContact ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right'
+  const classTwo = collapsedContact ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler-light navbar-toggler-right'
 
   return (
 

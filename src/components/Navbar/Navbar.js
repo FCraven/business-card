@@ -29,6 +29,7 @@ export default class Navbar extends Component {
 
           {/* Title Name */}
           <NavLink  className='nav-link navbar-brand d-inline-block'
+                    onClick={()=> this.setState({collapsed: true})}
                     to='/'>
 
             <img  src='/favicon.ico'
@@ -50,7 +51,7 @@ export default class Navbar extends Component {
                   data-toggle='collapse'
                   data-target='#navbarResponsive'>
 
-              <span className='navbar-toggler-icon btn'>
+              <span className='navbar-toggler-icon btn btn-sm justify-content-center'>
               </span>
           </button>
 
@@ -61,8 +62,8 @@ export default class Navbar extends Component {
 
               <li className="nav-item">
                 <NavLink  onClick={this.toggleNavbar}
-                          className="nav-link text-white m-3"
-                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
+                          className="nav-link text-light m-3"
+                          activeClassName='nav-link active btn-outline-secondary p-2 m-2'
                           to="/projects">
                           <b>Projects</b>
                 </NavLink>
@@ -70,8 +71,8 @@ export default class Navbar extends Component {
 
               <li className="nav-item" >
                 <NavLink  onClick={this.toggleNavbar}
-                          className='nav-link text-white m-3'
-                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
+                          className='nav-link text-light m-3'
+                          activeClassName='nav-link active btn-outline-secondary p-2 m-2'
                           to="/languages" >
                           <b>Languages</b>
                 </NavLink>
@@ -79,8 +80,8 @@ export default class Navbar extends Component {
 
               <li className="nav-item" >
                 <NavLink  onClick={this.toggleNavbar}
-                          className='nav-link text-white m-3'
-                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
+                          className='nav-link text-light m-3'
+                          activeClassName='nav-link active btn-outline-secondary p-2 m-2'
                           to="/libraries">
                           <b>Libraries</b>
                 </NavLink>
@@ -88,8 +89,8 @@ export default class Navbar extends Component {
 
               <li className='nav-item'>
                 <NavLink  onClick={this.toggleNavbar}
-                          className="nav-link text-white m-3"
-                          activeClassName='nav-link active btn-outline-secondary p-3 m-3'
+                          className="nav-link text-light m-3"
+                          activeClassName='nav-link active btn-outline-secondary p-2 m-2'
                           to="/education">
                           <b>Education</b>
                 </NavLink>

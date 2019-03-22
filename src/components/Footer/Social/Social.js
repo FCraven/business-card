@@ -5,7 +5,7 @@ const Social =(props)=>{
 
     const collapsedSocial = props.collapsedSocial
     const classOne = collapsedSocial ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsedSocial ? 'navbar-toggler navbar-toggler-left collapsed' : 'navbar-toggler navbar-toggler-left'
+    const classTwo = collapsedSocial ? 'navbar-toggler navbar-toggler-left collapsed' : 'navbar-toggler-light navbar-toggler-left'
 
   return (
       <div className='footer-social'>
@@ -18,7 +18,7 @@ const Social =(props)=>{
                     data-toggle='collapse'
                     data-target='#footerSocial'>
               <i className={collapsedSocial? `fas fa-angle-double-up`:`fas fa-angle-double-down`}></i>
-              <span className='contact-button-text'><b> Social</b></span>
+              <span className=''><b> Social</b></span>
             </button>
 
           <div id='footerSocial' className={`${classOne}`}>
