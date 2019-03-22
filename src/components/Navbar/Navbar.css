@@ -4,7 +4,7 @@
 
 .nav-item {
   font-family: 'Fredericka the Great', cursive;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .header-nav {
@@ -12,8 +12,8 @@
 }
 
 .bg-dark {
-  background: linear-gradient(rgba(88, 88, 88, 0.527),transparent)!important;
-  opacity:0.5
+  background: linear-gradient(rgba(241, 241, 241, 0.9),rgba(35, 28, 139, 0.253))!important;
+  opacity: 0.5;
 }
 
 

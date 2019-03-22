@@ -7,7 +7,7 @@
   height:100%;
 }
 
-.hero-text{
+.hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -20,5 +20,4 @@
 .home-button {
   position: relative;
   top: 30px;
-
 }
