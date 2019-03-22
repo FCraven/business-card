@@ -8,7 +8,7 @@ const Contact =(props)=> {
 
   return (
 
-    <div id='footer-contact'>
+    <div id='footer-contact '>
 
       <nav className='navbar-expand-md'>
 
@@ -17,7 +17,7 @@ const Contact =(props)=> {
                     type='button'
                     data-toggle='collapse'
                     data-target='#footerContact'>
-              <span className='contact-button-text'><b>Contact </b></span>
+              <span className='footer-button-text '><b> Contact </b></span>
               <i className={collapsedContact ? `fas fa-angle-double-up`:`fas fa-angle-double-down`}></i>
             </button>
 

@@ -37,9 +37,10 @@ export default class Navbar extends Component {
                   style={{maxWidth:'50px'}}
                   alt='A Raven'/>
 
-              <span id='navbar-name'
-                    className='text-light h6'>
-              </span>
+              {collapsed? null : <span id='navbar-name'
+                    className='text-light h6 d-md-none'>
+                    <b>Home</b>
+              </span>}
 
 
           </NavLink>

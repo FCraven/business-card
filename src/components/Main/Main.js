@@ -35,7 +35,7 @@ export default class Main extends Component {
           homepage: 'https://www.getbootstrap.com/'
         }
       ],
-      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/sunset.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg']
+      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg']
     }
   }
 
@@ -45,7 +45,7 @@ export default class Main extends Component {
     const randomBackground = backgrounds[Math.floor(Math.random()*backgrounds.length)]
 
     return (
-      <div className='main-component' style={{
+      <div className='main-component animated fadeIn slower' style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${randomBackground})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

@@ -18,7 +18,7 @@ const Social =(props)=>{
                     data-toggle='collapse'
                     data-target='#footerSocial'>
               <i className={collapsedSocial? `fas fa-angle-double-up`:`fas fa-angle-double-down`}></i>
-              <span className=''><b> Social</b></span>
+              <span className='footer-button-text'><b> Social</b></span>
             </button>
 
           <div id='footerSocial' className={`${classOne}`}>

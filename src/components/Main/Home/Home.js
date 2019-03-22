@@ -12,10 +12,11 @@ export default class Home extends Component {
 
   render() {
     return (
+
       <div class="hero-image">
         <div class="hero-text">
 
-          <p className='text-light h1'>Hi!</p>
+          <p className='text-light display-3 animated fadeIn slower'>Hi!</p>
           <p className='text-light h4'>My name is Frank</p>
           <p className='text-light h5'>I'm a Full Stack Developer </p>
 
@@ -24,6 +25,7 @@ export default class Home extends Component {
           <button className='btn btn-outline-light home-button'>Learn More</button>
         </div>
       </div>
+
 
     )
   }
