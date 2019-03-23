@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import './Home.css'
 
 export default class Home extends Component {
@@ -6,23 +7,27 @@ export default class Home extends Component {
     super(props)
 
     this.state = {
-
+        pictures: ['/moustacheSelfie.JPG','/skylineSelfie.jpeg','/twinningSelfie.jpeg']
     }
   }
 
   render() {
+    const pictures = this.state.pictures;
+    const picture = pictures[Math.floor(Math.random()*pictures.length)]
     return (
 
-      <div class="hero-image">
+      <div class="hero-image container container-fluid ">
         <div class="hero-text">
 
-          <p className='text-light display-3 animated fadeIn slower'>Hi!</p>
-          <p className='text-light h4'>My name is Frank</p>
-          <p className='text-light h5'>I'm a Full Stack Developer </p>
+          <img src={picture} className='rounded-circle img-fluid hero-picture border border-light' alt='me'/>
+          <div className='typed-stuff pt-4'>
+            <p className='text-light h4'> Hi! My name is Frank.</p>
+            <p className='text-light h4'>I'm a Full Stack Developer</p>
+          </div>
 
-          <hr className='bg-light mb-2' />
+          <hr className='bg-light ' />
 
-          <button className='btn btn-outline-light home-button'>Learn More</button>
+          <button className='btn btn-outline-light learn-more-button'>Learn More</button>
         </div>
       </div>
 
