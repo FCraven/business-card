@@ -16,7 +16,7 @@ export default class Home extends Component {
     const picture = pictures[Math.floor(Math.random()*pictures.length)]
     return (
 
-      <div class="hero-image container container-fluid ">
+      <div class="hero-image container container-fluid animated fadeOut">
         <div class="hero-text">
 
           <img src={picture} className='rounded-circle img-fluid hero-picture border border-light' alt='me'/>
