@@ -12,7 +12,7 @@
 }
 
 .bg-dark {
-  background: linear-gradient(rgba(35, 28, 139, 0.253),rgba(189, 182, 182, 0.9))!important;
+  background: linear-gradient(rgba(35, 28, 139, 0.253),rgba(189, 182, 182, 0.35))!important;
   opacity: 0.7;
 }
 
