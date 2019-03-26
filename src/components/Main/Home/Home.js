@@ -19,19 +19,21 @@ export default class Home extends Component {
       <div class="hero-image container container-fluid">
         <div class="hero-text ">
 
-          <div className=''>
-          <img src={picture} className='rounded-circle img-fluid hero-picture border border-light' alt='me' />
-          <div className='typed-stuff pt-4 ml-auto'>
-            <Typing>
-            <p className='text-light h4'> Hi! My name is Frank.</p>
-            <p className='text-light h4'>I'm a Full Stack Developer</p>
-            </Typing>
-          </div>
+          <div className='row-sm'>
+
+            <img src={picture} className='rounded-circle img-fluid hero-picture border border-light' alt='me' />
+
+            <div className='typed-stuff pt-4 ml-auto'>
+              <Typing startDelay={2500} speed={75}>
+                <p className='text-light h4'> Hi! <Typing.Delay ms={1000} /> My name is Frank.</p>
+                <p className='text-light h4'><Typing.Delay ms={1000}/> I'm a Full Stack Developer</p>
+              </Typing>
+            </div>
           </div>
 
           <hr className='bg-light ' />
 
-          <button className='btn btn-outline-light learn-more-button'>Learn More</button>
+          <button className='btn btn-outline-light learn-more-button'> Learn More About Me </button>
         </div>
       </div>
 
