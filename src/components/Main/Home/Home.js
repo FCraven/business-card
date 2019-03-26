@@ -26,7 +26,17 @@ export default class Home extends Component {
             <div className='typed-stuff pt-4 ml-auto'>
               <Typing startDelay={2500} speed={75}>
                 <p className='text-light h4'> Hi! <Typing.Delay ms={1000} /> My name is Frank.</p>
-                <p className='text-light h4'><Typing.Delay ms={1000}/> I'm a Full Stack Developer</p>
+                <p className='text-light h4'>
+                  <Typing.Delay ms={1000}/>
+                      I'm a front end developer.
+                      <Typing.Delay ms={750} />
+                      <Typing.Backspace count={20}/>
+                      back end developer.
+                      <Typing.Delay ms={750} />
+                      <Typing.Backspace count={19}/>
+                      Full Stack Software Engineer
+
+                </p>
               </Typing>
             </div>
           </div>
