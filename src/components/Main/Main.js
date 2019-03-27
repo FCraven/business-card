@@ -55,7 +55,7 @@ export default class Main extends Component {
       }}>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/menu/' component={Menu} />
+          <Route path='/menu' component={Menu} />
           {/* <Route path='/projects' component={Projects}/> */}
           {/* <Route path='/languages' component={Languages} /> */}
           {/* <Route path='/libraries' component={Libraries} /> */}
