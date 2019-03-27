@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
 import './Main.css'
 import Home from './Home'
+import Menu from './Menu'
 // import Languages from '../Languages'
 // import Libraries from '../Libraries'
 
@@ -54,6 +55,7 @@ export default class Main extends Component {
       }}>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route path='/menu/' component={Menu} />
           {/* <Route path='/projects' component={Projects}/> */}
           {/* <Route path='/languages' component={Languages} /> */}
           {/* <Route path='/libraries' component={Libraries} /> */}

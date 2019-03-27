@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Typing from 'react-typing-animation'
+import { NavLink } from 'react-router-dom'
 import './Home.css'
 
 export default class Home extends Component {
@@ -43,7 +44,9 @@ export default class Home extends Component {
 
           <hr className='bg-light ' />
 
-          <button className='btn btn-outline-light learn-more-button'> Learn More About Me </button>
+          <NavLink to='/menu'>
+            <button className='btn btn-outline-light learn-more-button'> Learn More About Me </button>
+          </NavLink>
         </div>
       </div>
 
