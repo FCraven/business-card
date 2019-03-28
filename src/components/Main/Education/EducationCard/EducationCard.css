@@ -1,18 +1,6 @@
-#education-cards {
-  /* padding-top: 80px;
-  padding-bottom: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10%; */
-  padding-top: 10%;
-  padding-bottom: 15px;
-  overflow: hidden;
-  font-family: 'Fredericka the Great', cursive;
-  height: 90%;
-  margin-right: 5%;
-  margin-left: 5%;
-}
+#education-card {
+  max-width: 50%;
+  
 
-.card {
-  overflow: auto;
+
 }

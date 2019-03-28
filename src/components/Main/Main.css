@@ -6,4 +6,5 @@
   bottom:0;
   overflow: auto;
   position: fixed;
+  padding-top: 80px;
 }

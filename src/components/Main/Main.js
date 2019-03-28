@@ -42,21 +42,21 @@ export default class Main extends Component {
         {
           schoolName: 'FullStack Academy',
           imageUrl: 'https://cdn-images-1.medium.com/max/1000/1*i0rG0owbE0lDeD0dsIaw4Q.jpeg',
-          schoolDescription: `An immersive software engineering bootcamp in downtown NYC. The 5-month program taught me how to pick up new tech quickly and efficiently put it to use. High speed environment where adaptability was the key to survival. I learned so much and I'd go back again in a heartbeat. `,
+          schoolDescription: `An immersive software engineering bootcamp in downtown NYC. The program taught me how to pick up new tech efficiently and quickly put it to use. High speed environment where adaptability was the key to success. I learned so much and it was an incredible first step. `,
           degree: 'Certificate- Software Engineering Immersive',
           schoolUrl:'https://www.fullstackacademy.com'
         },
         {
           schoolName: 'Fordham University',
           imageUrl: 'https://static1.squarespace.com/static/548748b1e4b083fc03ebf70e/t/587e4533e58c62775cb8c86f/1484670263948/?format=750w',
-          schoolDescription: `An immersive software engineering bootcamp in downtown NYC. The 5-month program taught me how to pick up new tech quickly and efficiently put it to use. High speed environment where adaptability was the key to survival. I learned so much and I'd go back again in a heartbeat. `,
+          schoolDescription: `While working full-time, I also attended Fordham full-time. Balancing both was difficult but it taught me a lot about time management, dedication and perseverance.`,
           degree: 'BA - Economics',
           schoolUrl:'https://www.fordham.edu'
         },
         {
           schoolName: 'West Point',
           imageUrl: 'https://www.carnegiecouncil.org/publications/articles_papers_reports/0174/_res/id=Picture/WestPoint-1.jpg',
-          schoolDescription: `Out of high school I went to the United States Military. Despite only spending a year there, it was a formative experience. It taught me a lot about leadership, teamwork, discipline, adaptability and accountability. I'll never forget those lessons `,
+          schoolDescription: `Out of high school I went to the United States Military Academy. Despite only spending a year there, it was a formative experience. It taught me a lot about leadership, teamwork, discipline, adaptability and accountability. I'll never forget those lessons `,
           degree: '',
           schoolUrl:'https://westpoint.edu'
         }
