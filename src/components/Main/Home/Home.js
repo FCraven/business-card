@@ -20,9 +20,6 @@ export default class Home extends Component {
       <div className="hero-image container container-fluid">
         <div className="hero-text ">
 
-          <div className='row-sm'>
-
-            <img src={picture} className='rounded-circle img-fluid hero-picture border border-light' alt='me' />
 
             <div className='typed-stuff pt-4 ml-auto'>
               <Typing startDelay={2500} speed={75}>
@@ -36,13 +33,13 @@ export default class Home extends Component {
                       <Typing.Delay ms={750} />
                       <Typing.Backspace count={19}/>
                       Full Stack Software Engineer
-
                 </p>
               </Typing>
             </div>
-          </div>
 
-          <hr className='bg-light ' />
+            <img src={picture} className='rounded-circle m-2 img-fluid hero-picture border border-light' alt='me' />
+
+          <hr className='bg-light'style={{width:'50%'}}/>
 
           <NavLink to='/menu'>
             <button className='btn btn-outline-light learn-more-button'> Learn More About Me </button>
