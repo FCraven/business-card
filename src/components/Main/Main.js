@@ -4,8 +4,7 @@ import './Main.css'
 import Home from './Home'
 import Menu from './Menu'
 import Projects from './Projects'
-// import Languages from '../Languages'
-// import Libraries from '../Libraries'
+import TechStack from './TechStack'
 import Education from './Education'
 
 
@@ -123,8 +122,7 @@ export default class Main extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/menu' component={Menu} />
           <Route path='/projects' render={(props)=> <Projects projects={projects} />} />
-          {/* <Route path='/languages' component={Languages} /> */}
-          {/* <Route path='/libraries' component={Libraries} /> */}
+          <Route path='/techstack' component={TechStack} />
           <Route path='/education' render={(props)=> <Education education={education} />} />
         </Switch>
       </div>

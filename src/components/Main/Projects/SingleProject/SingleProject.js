@@ -4,7 +4,7 @@ import './SingleProject.css'
 const SingleProject = (props) => {
   const project = props.project
   return (
-    <div className='col-sm-6 col-lg' >
+    <div className='col-sm-6' >
       <div className="card mx-auto mb-3" style={{}}>
 
         {/* Card Image or Video */}
@@ -26,7 +26,7 @@ const SingleProject = (props) => {
           <button onClick={() => window.open(`${project.githubUrl}`)}
             disabled={project.githubUrl ? false : true}
             className={project.githubUrl ? "btn bg-dark text-light" : "btn bg-dark disabled"} >
-            Check out the Code
+            {project.githubUrl? 'Check out the Code' : 'Nothing to see here!'}
               </button>
 
         </div>

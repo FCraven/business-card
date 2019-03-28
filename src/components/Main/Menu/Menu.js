@@ -20,25 +20,14 @@ const Menu =()=> {
         <small></small>
       </NavLink>
 
-      <NavLink  to='/languages'
+      <NavLink  to='/techstack'
                 className='m-1 m-md-auto bg-dark text-light list-group-item list-group-item-action'
                 activeClassName='list-group-item list-group-item-action active'
                 id='main-menu-item'>
         <div className="d-flex w-100 justify-content-center">
-          <h5 className="mb-1"><b>Languages</b></h5>
+          <h5 className="mb-1"><b>TechStack</b></h5>
         </div>
-        <p className="mb-1 d-sm-none d-md-block">See a list of programming languages I can work in!</p>
-        <small></small>
-      </NavLink>
-
-      <NavLink  to='/libraries'
-                className='m-1 m-md-auto bg-dark text-light list-group-item list-group-item-action'
-                activeClassName='list-group-item list-group-item-action active'
-                id='main-menu-item'>
-        <div className="d-flex w-100 justify-content-center">
-          <h5 className="mb-1"><b>Libraries</b></h5>
-        </div>
-        <p className="mb-1 d-sm-none d-md-block">JavaScript has a lot of powerful libraries. See which ones I like to use!</p>
+        <p className="mb-1 d-sm-none d-md-block">See a list of programming languages and libraries I can work in!</p>
         <small></small>
       </NavLink>
 
