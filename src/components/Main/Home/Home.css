@@ -10,12 +10,13 @@
   color: white;
   width: 75%;
   padding-top: 65px;
-  padding-bottom: 10px;
+  padding-bottom: 50px;;
 }
 
 .learn-more-button {
   position: relative;
   top: 10px;
+  padding-bottom: 10px;
 
 }
 

@@ -17,8 +17,8 @@ export default class Home extends Component {
     const picture = pictures[Math.floor(Math.random() * pictures.length)]
     return (
 
-      <div class="hero-image container container-fluid">
-        <div class="hero-text ">
+      <div className="hero-image container container-fluid">
+        <div className="hero-text ">
 
           <div className='row-sm'>
 
