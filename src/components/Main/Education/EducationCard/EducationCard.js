@@ -7,7 +7,7 @@ const EducationCard =(props)=> {
   console.log(`school =--->`,school)
   return (
 
-    <div id='education-card mx-auto' className="card mb-3">
+    <div id='education-card mx-auto shadow-lg' className="card mb-3">
       <img onClick={()=> window.open(`${school.schoolUrl}`)} src={`${school.imageUrl}`} className="card-img-top img-fluid img-thumbnail" alt="school"  />
       <div className="card-body">
         <h5 className="card-title text-center">{school.schoolName}</h5>

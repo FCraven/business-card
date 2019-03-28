@@ -9,7 +9,7 @@ const Education =(props)=> {
 
   console.log(`==--->`, education)
   return (
-    <div className='card bg-dark education-main container container-fluid col-10 col-md-6 col-lg-6 mx-auto pb-5'>
+    <div className='card bg-secondary education-main container container-fluid col-10 col-md-6 col-lg-6 mx-auto pb-5'>
     {cardMap}
     </div>
     )
