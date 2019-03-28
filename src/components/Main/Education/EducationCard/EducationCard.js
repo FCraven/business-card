@@ -2,6 +2,7 @@ import React from 'react'
 import './EducationCard.css'
 
 
+
 const EducationCard =(props)=> {
   const school = props.school
   console.log(`school =--->`,school)

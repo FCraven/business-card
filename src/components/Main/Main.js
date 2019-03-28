@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 import './Main.css'
 import Home from './Home'
 import Menu from './Menu'
+import Projects from './Projects'
 // import Languages from '../Languages'
 // import Libraries from '../Libraries'
 import Education from './Education'
@@ -37,7 +38,9 @@ export default class Main extends Component {
           homepage: 'https://www.getbootstrap.com/'
         }
       ],
+
       backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg'],
+
       education:[
         {
           schoolName: 'FullStack Academy',
@@ -56,12 +59,44 @@ export default class Main extends Component {
         {
           schoolName: 'West Point',
           imageUrl: 'https://www.carnegiecouncil.org/publications/articles_papers_reports/0174/_res/id=Picture/WestPoint-1.jpg',
-          schoolDescription: `Out of high school I went to the United States Military Academy. Despite only spending a year there, it was a formative experience. It taught me a lot about leadership, teamwork, discipline, adaptability and accountability. I'll never forget those lessons `,
+          schoolDescription: `Out of high school I went to the United States Military Academy. The year I spent there was a formative experience. It taught me a lot about leadership, teamwork, discipline, adaptability and accountability. I'll never forget those lessons.`,
           degree: '',
           schoolUrl:'https://westpoint.edu'
         }
+      ],
 
+      projects: [
+        {
+          title: 'DropXR',
+          imageUrl: "https://www.youtube.com/embed/MWY60alDvVg",
+          githubUrl:'https://github.com/dropar/drop',
+          description:`A lean browser based progressive web application that pulls from Google's Poly to create an AR and VR experience`,
+          hasVideo: true
+        },
+        {
+          title: 'The Yoyo Adventure',
+          imageUrl: "https://www.youtube.com/embed/v79vy17DJWs",
+          githubUrl:'',
+          description:'The product of a 4-day hackathon to learn something new. I went from zero to this!',
+          hasVideo: true
+        },
+        {
+          title: 'Members Dashboard',
+          imageUrl:'https://cdn.vox-cdn.com/thumbor/lRKtyaeK_DTPFE_blIeK0o0KSTk=/0x0:3000x2000/920x613/filters:focal(1315x220:1795x700):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/59035787/shutterstock_272424740.0.jpg',
+          githubUrl:'https://github.com/FCraven/nytimes-dashboard',
+          description:'Just started this one. An easy to use dashboard that consumes the NYTimes API and returns an easily navigable, user-friendly decluttering of the news.',
+          hasVideo: false
+        },
+        {
+          title: 'Fire & Ironman',
+          imageUrl:'http://www.stickpng.com/assets/images/58889577bc2fc2ef3a1860be.png',
+          githubUrl:'',
+          description:'Lifestyle application for Kevin Duffy. Motivational Speaker, Fireman, Ironman triathlete. Plant based life',
+          hasVideo: false
+        }
       ]
+
+
 
 
 
@@ -74,6 +109,7 @@ export default class Main extends Component {
     const backgrounds = this.state.backgrounds;
     const randomBackground = backgrounds[Math.floor(Math.random()*backgrounds.length)]
     const education = this.state.education
+    const projects = this.state.projects
 
     return (
       <div className='main-component animated fadeIn slower' style={{
@@ -86,7 +122,7 @@ export default class Main extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/menu' component={Menu} />
-          {/* <Route path='/projects' component={Projects}/> */}
+          <Route path='/projects' render={(props)=> <Projects projects={projects} />} />
           {/* <Route path='/languages' component={Languages} /> */}
           {/* <Route path='/libraries' component={Libraries} /> */}
           <Route path='/education' render={(props)=> <Education education={education} />} />
