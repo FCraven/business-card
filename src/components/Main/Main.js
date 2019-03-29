@@ -75,7 +75,7 @@ export default class Main extends Component {
         {
           title: 'The Yoyo Adventure',
           imageUrl: "https://www.youtube.com/embed/v79vy17DJWs",
-          githubUrl:'',
+          githubUrl:'https://github.com/FCraven/theYoyoAdventure',
           description:'The product of a 4-day hackathon to learn something new. I went from zero to this!',
           hasVideo: true
         },
