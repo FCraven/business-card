@@ -25,8 +25,8 @@ const SingleProject = (props) => {
           <div className='card-footer'>
           <button onClick={() => window.open(`${project.githubUrl}`)}
             disabled={project.githubUrl ? false : true}
-            className={project.githubUrl ? "btn bg-dark text-light" : "btn bg-dark disabled"} >
-            {project.githubUrl? 'Check out the Code' : 'Nothing to see here!'}
+            className={project.githubUrl ? "btn bg-primary text-light" : "btn bg-primary disabled"} >
+            {project.githubUrl? 'Check out the Code' : 'Coming Soon!'}
               </button>
           </div>
         </div>

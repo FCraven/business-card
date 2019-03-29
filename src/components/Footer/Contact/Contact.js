@@ -4,7 +4,7 @@ const Contact =(props)=> {
 
   const collapsedContact = props.collapsedContact
   const classOne = collapsedContact ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-  const classTwo = collapsedContact ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler-light navbar-toggler-right'
+  const classTwo = collapsedContact ? 'navbar-toggler collapsed text-light' : 'navbar-toggler navbar-toggler-right'
 
   return (
 
@@ -13,7 +13,7 @@ const Contact =(props)=> {
       <nav className='navbar-expand-md'>
 
       <button onClick={props.toggleContact}
-                    className={`${classTwo} btn btn-outline-light bg-dark mb-3`}
+                    className={`${classTwo} btn btn-outline-light bg-primary mb-3`}
                     type='button'
                     data-toggle='collapse'
                     data-target='#footerContact'>
@@ -25,7 +25,7 @@ const Contact =(props)=> {
 
         <a className="p-1 m-1" href="FrankCravenResume.pdf" download="FrankCravenResume">
           <button type="button"
-                  className="btn btn-outline-secondary bg-dark text-light">
+                  className="btn btn-outline-light bg-primary text-light">
                   <small className='contact-button-text'><b>Resume </b></small>
                   <i className="fas fa-file-download"></i>
           </button>
@@ -33,7 +33,7 @@ const Contact =(props)=> {
 
         <a className="p-1 m-1" href="mailto:craven.francis@gmail.com?subject=Let's get in touch!">
           <button type="button"
-                  className="btn btn-outline-secondary bg-dark text-light">
+                  className="btn btn-outline-light bg-primary text-light">
                   <small className='contact-button-text'><b>E-Mail </b></small>
                   <b><i className="far fa-envelope"></i></b>
           </button>
@@ -41,7 +41,7 @@ const Contact =(props)=> {
 
         <a className="m-1" href="tel:+19146028799">
           <button type="button"
-                  className="btn btn-outline-secondary bg-dark text-light">
+                  className="btn btn-outline-light bg-primary text-light">
                   <small className='contact-button-text'><b>Call </b></small>
                   <b><i className="fas fa-phone"></i></b>
           </button>

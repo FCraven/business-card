@@ -10,7 +10,7 @@ const Menu =()=> {
     <div id='main-menu' className='align-items-center list-group text-center'>
 
       <NavLink  to='/projects'
-                className='m-1 m-md-auto bg-dark text-light list-group-item list-group-item-action'
+                className='m-1 m-md-auto bg-primary text-light list-group-item list-group-item-action'
                 activeClassName='list-group-item list-group-item-action active'
                 id='main-menu-item'>
         <div className="d-flex w-100 justify-content-center">
@@ -21,7 +21,7 @@ const Menu =()=> {
       </NavLink>
 
       <NavLink  to='/techstack'
-                className='m-1 m-md-auto bg-dark text-light list-group-item list-group-item-action'
+                className='m-1 m-md-auto bg-primary text-light list-group-item list-group-item-action'
                 activeClassName='list-group-item list-group-item-action active'
                 id='main-menu-item'>
         <div className="d-flex w-100 justify-content-center">
@@ -32,7 +32,7 @@ const Menu =()=> {
       </NavLink>
 
       <NavLink  to='/education'
-                className='m-1 m-md-auto bg-dark text-light list-group-item list-group-item-action'
+                className='m-1 m-md-auto bg-primary text-light list-group-item list-group-item-action'
                 activeClassName='list-group-item list-group-item-action active'
                 id='main-menu-item'>
         <div className="d-flex w-100 justify-content-center">

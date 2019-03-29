@@ -15,7 +15,7 @@ const Home =()=> {
                   <Typing.Delay ms={1000}/>
                       I'm a front end
                       <Typing.Delay ms={1000} />
-                      <Typing.Backspace count={9}/>
+                      <Typing.Backspace speed={100} count={9}/>
                       back end
                       <Typing.Delay ms={1000} />
                       <Typing.Backspace count={8}/>

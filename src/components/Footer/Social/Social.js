@@ -5,7 +5,7 @@ const Social =(props)=>{
 
     const collapsedSocial = props.collapsedSocial
     const classOne = collapsedSocial ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsedSocial ? 'navbar-toggler navbar-toggler-left collapsed' : 'navbar-toggler-light navbar-toggler-left'
+    const classTwo = collapsedSocial ? 'navbar-toggler collapsed text-light' : 'navbar-toggler-light navbar-toggler-left'
 
   return (
       <div className='footer-social'>
@@ -13,7 +13,7 @@ const Social =(props)=>{
         <nav className='navbar-expand-md'>
 
             <button onClick={props.toggleSocial}
-                    className={`${classTwo} btn btn-outline-light bg-dark col mb-3`}
+                    className={`${classTwo} btn btn-outline-light bg-primary col mb-3`}
                     type='button'
                     data-toggle='collapse'
                     data-target='#footerSocial'>
@@ -24,19 +24,19 @@ const Social =(props)=>{
           <div id='footerSocial' className={`${classOne}`}>
 
             <button type="button"
-                    className="btn bg-dark text-light m-1 p-2"
+                    className="btn bg-primary text-light m-1 p-2"
                     onClick={()=> window.open('https://www.linkedin.com/in/frank-craven-ab1029b3/')}>
                     <b><i className="fab fa-linkedin fa-2x"></i></b>
             </button>
 
             <button type="button"
-                    className="btn bg-dark text-light m-1 p-2"
+                    className="btn bg-primary text-light m-1 p-2"
                     onClick={()=> window.open('https://www.github.com/FCraven')}>
                     <b><i className="fab fa-github fa-2x"></i></b>
             </button>
 
             <button type="button"
-                    className="btn bg-dark text-light m-1 p-2"
+                    className="btn bg-primary text-light m-1 p-2"
                     onClick={()=> window.open('https://www.instagram.com/francois_letanqa/')}>
                     <b><i className="fab fa-instagram fa-2x"></i></b>
             </button>
