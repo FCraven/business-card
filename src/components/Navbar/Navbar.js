@@ -20,7 +20,7 @@ export default class Navbar extends Component {
   render() {
     const collapsed = this.state.collapsed;
     const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-light collapsed' : 'navbar-toggler navbar-toggler-right bg-secondary'
+    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right bg-dark collapsed' : 'navbar-toggler navbar-toggler-right bg-secondary'
 
     return (
       <div className='container container-fluid header-nav'>

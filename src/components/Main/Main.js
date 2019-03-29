@@ -81,14 +81,14 @@ export default class Main extends Component {
         },
         {
           title: 'Members Dashboard',
-          imageUrl:'https://cdn.vox-cdn.com/thumbor/lRKtyaeK_DTPFE_blIeK0o0KSTk=/0x0:3000x2000/920x613/filters:focal(1315x220:1795x700):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/59035787/shutterstock_272424740.0.jpg',
+          imageUrl:'https://www.publicdomainpictures.net/pictures/140000/velka/vintage-newspaper-print.jpg',
           githubUrl:'https://github.com/FCraven/nytimes-dashboard',
           description:'Just started this one. An easy to use dashboard that consumes the NYTimes API and returns an easily navigable, user-friendly decluttering of the news.',
           hasVideo: false
         },
         {
           title: 'Fire & Ironman',
-          imageUrl:'http://www.stickpng.com/assets/images/58889577bc2fc2ef3a1860be.png',
+          imageUrl:'https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg',
           githubUrl:'',
           description:'Lifestyle application for Kevin Duffy. Motivational Speaker, Fireman, Ironman triathlete. Plant based life',
           hasVideo: false
