@@ -22,13 +22,13 @@ const SingleProject = (props) => {
           <h5 className="card-title">{project.title}</h5>
           <p className="card-text">{project.description}</p>
 
-
+          <div className='card-footer'>
           <button onClick={() => window.open(`${project.githubUrl}`)}
             disabled={project.githubUrl ? false : true}
             className={project.githubUrl ? "btn bg-dark text-light" : "btn bg-dark disabled"} >
             {project.githubUrl? 'Check out the Code' : 'Nothing to see here!'}
               </button>
-
+          </div>
         </div>
 
       </div>

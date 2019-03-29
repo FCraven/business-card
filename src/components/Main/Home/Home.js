@@ -26,7 +26,7 @@ const Home =()=> {
           <hr className='bg-light'style={{width:'50%'}}/>
 
           <NavLink to='/menu'>
-            <button className='btn btn-large-block bg-dark nav-text text-light learn-more-button'>
+            <button className='btn btn-large-block bg-primary nav-text text-light learn-more-button'>
               <b>Learn More About Me</b>
             </button>
           </NavLink>

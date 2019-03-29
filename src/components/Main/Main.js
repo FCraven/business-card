@@ -88,7 +88,7 @@ export default class Main extends Component {
         },
         {
           title: 'Fire & Ironman',
-          imageUrl:'https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg',
+          imageUrl:'https://static1.squarespace.com/static/58518b50197aeabc8e85286d/t/5b69fcd770a6ad4074ee7959/1533672668893/new+layout.jpg',
           githubUrl:'',
           description:'Lifestyle application for Kevin Duffy. Motivational Speaker, Fireman, Ironman triathlete. Plant based life',
           hasVideo: false
