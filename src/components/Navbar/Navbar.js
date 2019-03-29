@@ -25,7 +25,7 @@ export default class Navbar extends Component {
     return (
       <div className='container container-fluid header-nav'>
 
-        <nav className="navbar fixed-top navbar-light bg-dark navbar-expand-md">
+        <nav className="navbar fixed-top navbar-dark bg-dark  navbar-expand-md">
 
           {/* Title Name */}
           <NavLink  className='nav-link navbar-brand d-inline-block'
