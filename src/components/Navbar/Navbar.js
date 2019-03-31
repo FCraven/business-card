@@ -88,6 +88,24 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
+              <li className='nav-item'>
+                <NavLink  onClick={this.toggleNavbar}
+                          className="nav-link text-light m-3"
+                          activeClassName='nav-link active btn-outline-secondary p-2 m-2'
+                          to="/social">
+                          <b>Social</b>
+                </NavLink>
+              </li>
+
+              <li className='nav-item'>
+                <NavLink  onClick={this.toggleNavbar}
+                          className="nav-link text-light m-3"
+                          activeClassName='nav-link active btn-outline-secondary p-2 m-2'
+                          to="/contact">
+                          <b>Contact</b>
+                </NavLink>
+              </li>
+
             </ul>
           </div>
         </nav>
