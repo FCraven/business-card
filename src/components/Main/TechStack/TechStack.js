@@ -11,3 +11,4 @@ export default class TechStack extends Component {
   }
 }
 
+//to be inserted Front End /Back End /Other Tech
