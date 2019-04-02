@@ -106,9 +106,9 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
-              <li className='nav-item'>
 
-                <div class="dropdown">
+
+                <li class="nav-item dropdown">
                   <button class="btn btn-primary dropdown-toggle"
                           type="button"
                           data-toggle="dropdown">Dropdown Example
@@ -118,7 +118,6 @@ export default class Navbar extends Component {
                     <li><a href="#">CSS</a></li>
                     <li><a href="#">JavaScript</a></li>
                   </ul>
-                </div>
               </li>
 
             </ul>
