@@ -106,6 +106,23 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
+
+            {/* Below this line is the attempt at adding the social dropdown to the navbar */}
+              {/* <li className='nav-item dropdown'>
+                <a  className='nav-link dropdown-toggle'
+                    href='#'
+                    id='socialDropdown'
+                    role='button'
+                    data-toggle='dropdown'>Social</a>
+
+                    <div className='dropdown-menu' aria-labelledby='socialDropdown'>
+
+
+                    </div>
+
+
+              </li> */}
+
             </ul>
           </div>
         </nav>
