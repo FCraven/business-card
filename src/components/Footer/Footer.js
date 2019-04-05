@@ -36,8 +36,9 @@ export default class Footer extends Component {
 
   return (
 
-    <nav className="bg-primary footer ">
-      <div className='container row justify-content-center mx-auto'>
+    <nav className="bg-primary footer fixed-bottom">
+
+      <div className='container row w-100 justify-content-center mx-auto'>
 
       <Social collapsedSocial={collapsedSocial}
               toggleSocial={this.toggleSocial} />

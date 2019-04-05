@@ -18,7 +18,7 @@ const SingleProject = (props) => {
 
 
         {/* CardBody */}
-        <div className="card-body">
+        <div className="card-body text-center">
           <h5 className="card-title">{project.title}</h5>
           <p className="card-text">{project.description}</p>
 

@@ -6,7 +6,7 @@ import Menu from './Menu'
 import Projects from './Projects'
 import TechStack from './TechStack'
 import Education from './Education'
-import Footer from '../Footer'
+
 
 
 
@@ -88,6 +88,13 @@ export default class Main extends Component {
           hasVideo: false
         },
         {
+          title: 'This Page!',
+          imageUrl:'/moustacheSelfie.JPG',
+          githubUrl:'https://github.com/FCraven/business-card',
+          description:`This is a single page application business card I built using CRA, React and Bootstrap.`,
+          hasVideo: false
+        },
+        {
           title: 'Fire & Ironman',
           imageUrl:'https://static1.squarespace.com/static/58518b50197aeabc8e85286d/t/5b69fcd770a6ad4074ee7959/1533672668893/new+layout.jpg',
           githubUrl:'',
@@ -128,13 +135,7 @@ export default class Main extends Component {
           <Route path='/education' render={(props)=> <Education education={education} />} />
         </Switch>
 
-      <div className='footer'>
-        <Footer />
       </div>
-
-
-      </div>
-
 
 
 
