@@ -25,7 +25,7 @@ export default class Navbar extends Component {
     return (
       <div className='container container-fluid header-nav'>
 
-        <nav className="navbar fixed-top navbar-dark bg-primary navbar-expand-md">
+        <nav className="navbar fixed-top navbar-dark bg-primary navbar-expand-md animated fadeInDownBig slower delay-3s">
 
           {/* Title Name */}
           <NavLink  className='nav-link navbar-brand d-inline-block'
