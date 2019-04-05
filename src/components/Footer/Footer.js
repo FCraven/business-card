@@ -36,14 +36,15 @@ export default class Footer extends Component {
 
   return (
 
-    <nav className="navbar navbar-dark fixed-bottom bg-primary ">
+    <nav className="bg-primary footer ">
+      <div className='container row justify-content-center mx-auto'>
 
       <Social collapsedSocial={collapsedSocial}
               toggleSocial={this.toggleSocial} />
 
       <Contact  collapsedContact={collapsedContact}
                 toggleContact={this.toggleContact} />
-
+      </div>
     </nav>
   )}
 }

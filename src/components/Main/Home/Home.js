@@ -13,13 +13,7 @@ const Home =()=> {
                 <p className='text-light h4 p-1'><Typing.Delay ms={1000} /> My name is Frank.</p>
                 <p className='text-light h4'>
                   <Typing.Delay ms={1000}/>
-                      I'm a front end
-                      <Typing.Delay ms={1000} />
-                      <Typing.Backspace speed={100} count={9}/>
-                      back end
-                      <Typing.Delay ms={1000} />
-                      <Typing.Backspace count={8}/>
-                      Full Stack Software Engineer
+                      I'm a Full Stack Software Engineer
                 </p>
               </Typing>
 

@@ -25,7 +25,7 @@ export default class Navbar extends Component {
     return (
       <div className='container container-fluid header-nav'>
 
-        <nav className="navbar fixed-top navbar-dark bg-primary navbar-expand-md">
+        <nav className="navbar fixed-top navbar-dark bg-primary navbar-expand-md animated fadeInDownBig slower">
 
           {/* Title Name */}
           <NavLink  className='nav-link navbar-brand d-inline-block'
@@ -70,6 +70,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
+              {/* TechStack */}
               <li className="nav-item" >
                 <NavLink  onClick={this.toggleNavbar}
                           className='nav-link text-light m-3'
@@ -79,6 +80,7 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
+              {/* Education */}
               <li className='nav-item'>
                 <NavLink  onClick={this.toggleNavbar}
                           className="nav-link text-light m-3"
@@ -88,40 +90,99 @@ export default class Navbar extends Component {
                 </NavLink>
               </li>
 
-              <li className='nav-item'>
-                <NavLink  onClick={this.toggleNavbar}
-                          className="nav-link text-light m-3"
+              {/* Social */}
+              <li className='nav-item dropdown'>
+                <NavLink
+                          className="nav-link dropdown-toggle text-light mt-3"
                           activeClassName='nav-link active btn-outline-secondary p-2 m-2'
-                          to="/social">
-                          <b>Social</b>
-                </NavLink>
+                          to="#"
+                          id='socialDropdown'
+                          data-toggle='dropdown'>
+                          <b>Social</b></NavLink>
+
+                  {/* dropdown menu */}
+                  <div className='dropdown-menu bg-primary' aria-labelledby='socialDropdown'>
+
+                    {/* LinkedIn dropdown button */}
+                    <button type="button"
+                            className="btn bg-primary text-light w-100 h-100"
+                            onClick={()=> window.open('https://www.linkedin.com/in/frank-craven-ab1029b3/')}>
+                            <b><i className="fab fa-linkedin fa-2x"></i></b>
+                    </button>
+
+                  <div className='dropdown-divider'></div>
+
+                  {/* Github dropdown button */}
+                  <button type="button"
+                          className="btn bg-primary text-light w-100 h-100"
+                          onClick={()=> window.open('https://www.github.com/FCraven')}>
+                          <b><i className="fab fa-github fa-2x"></i></b>
+                  </button>
+
+
+                  <div className='dropdown-divider'></div>
+
+                  {/* Instagram dropdown button */}
+                  <button type="button"
+                          className="btn bg-primary text-light w-100 h-100"
+                          onClick={()=> window.open('https://www.instagram.com/francois_letanqa/')}>
+                          <b><i className="fab fa-instagram fa-2x"></i></b>
+                  </button>
+
+                  </div>
               </li>
 
-              <li className='nav-item'>
-                <NavLink  onClick={this.toggleNavbar}
-                          className="nav-link text-light m-3"
+
+            {/* Contact */}
+            <li className='nav-item dropdown'>
+
+                {/* Contact Navbar Button (dropdown) */}
+                <NavLink
+                          className="nav-link dropdown-toggle text-light mt-3"
                           activeClassName='nav-link active btn-outline-secondary p-2 m-2'
-                          to="/contact">
-                          <b>Contact</b>
-                </NavLink>
-              </li>
+                          to="#"
+                          id='contactDropdown'
+                          data-toggle='dropdown'>
+                          <b>Contact</b></NavLink>
+
+                  {/* Contact Dropdown Menu */}
+                  <div className='dropdown-menu bg-primary mx-auto' aria-labelledby='contactDropdown'>
+
+                  {/* Download Resume button */}
+                  <a className="p-1 m-1" href="FrankCravenResume.pdf" download="FrankCravenResume">
+                    <button type="button"
+                            className="btn btn-outline-light bg-primary text-light">
+                            <small className='contact-button-text'><b>Resume </b></small>
+                            <i className="fas fa-file-download"></i>
+                    </button>
+                  </a>
+
+                  <div className='dropdown-divider'></div>
+
+                  {/* Email Me button */}
+                  <a className="p-1 m-1" href="mailto:craven.francis@gmail.com?subject=Let's get in touch!">
+                    <button type="button"
+                            className="btn btn-outline-light bg-primary text-light">
+                            <small className='contact-button-text'><b>E-Mail </b></small>
+                            <b><i className="far fa-envelope"></i></b>
+                    </button>
+                  </a>
+
+                  <div className='dropdown-divider'></div>
+
+                  <a className="m-1" href="tel:+19146028799">
+                    <button type="button"
+                            className="btn btn-outline-light bg-primary text-light">
+                            <small className='contact-button-text'><b>Call </b></small>
+                            <b><i className="fas fa-phone"></i></b>
+                    </button>
+                  </a>
 
 
-            {/* Below this line is the attempt at adding the social dropdown to the navbar */}
-              {/* <li className='nav-item dropdown'>
-                <a  className='nav-link dropdown-toggle'
-                    href='#'
-                    id='socialDropdown'
-                    role='button'
-                    data-toggle='dropdown'>Social</a>
-
-                    <div className='dropdown-menu' aria-labelledby='socialDropdown'>
+              </div>
+            </li>
 
 
-                    </div>
-
-
-              </li> */}
 
             </ul>
           </div>

@@ -6,6 +6,7 @@ import Menu from './Menu'
 import Projects from './Projects'
 import TechStack from './TechStack'
 import Education from './Education'
+import Footer from '../Footer'
 
 
 
@@ -111,7 +112,8 @@ export default class Main extends Component {
     const projects = this.state.projects
 
     return (
-      <div className='main-component animated fadeIn slower' style={{
+
+      <div className='main-component' style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(${randomBackground})`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -125,7 +127,15 @@ export default class Main extends Component {
           <Route path='/techstack' component={TechStack} />
           <Route path='/education' render={(props)=> <Education education={education} />} />
         </Switch>
+
+      <div className='footer'>
+        <Footer />
       </div>
+
+
+      </div>
+
+
 
 
 

@@ -2,3 +2,10 @@
   /* font-family: 'Fredericka the Great', cursive; */
   font-size:1em;
 }
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
