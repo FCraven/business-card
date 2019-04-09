@@ -27,7 +27,7 @@ const Menu =()=> {
         <div className="d-flex w-100 justify-content-center">
           <h5 className="mb-1"><b>TechStack</b></h5>
         </div>
-        <p className="mb-1 d-sm-none d-md-block">See a list of programming languages and libraries I can work in!</p>
+        <p className="mb-1 d-sm-none d-md-block">See a list of programming languages and libraries I can work with!</p>
         <small></small>
       </NavLink>
 

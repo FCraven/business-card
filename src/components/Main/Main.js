@@ -81,17 +81,17 @@ export default class Main extends Component {
           hasVideo: true
         },
         {
-          title: 'Members Dashboard',
+          title: `Member's Dashboard`,
           imageUrl:'https://www.publicdomainpictures.net/pictures/140000/velka/vintage-newspaper-print.jpg',
           githubUrl:'https://github.com/FCraven/nytimes-dashboard',
           description:'Just started this one. An easy to use dashboard that consumes the NYTimes API and returns an easily navigable, user-friendly decluttering of the news.',
           hasVideo: false
         },
         {
-          title: 'This Page!',
+          title: 'This App!',
           imageUrl:'/moustacheSelfie.JPG',
           githubUrl:'https://github.com/FCraven/business-card',
-          description:`This is a single page application business card I built using CRA, React and Bootstrap.`,
+          description:`This is a single page application business card I built using CRA, React, React Router and Bootstrap.`,
           hasVideo: false
         },
         {

@@ -10,14 +10,14 @@ const Home =()=> {
 
               <Typing startDelay={2500} speed={75}>
               <p className='text-light h4 p-1'> Hi!</p>
-                <p className='text-light h4 p-1'><Typing.Delay ms={100} /> My name is Frank.</p>
+                <p className='text-light h4 p-1'><Typing.Delay ms={100} /> My name is Frank</p>
                 <p className='text-light h4'>
                   <Typing.Delay ms={1000}/>
                       I'm a Full Stack Software Engineer
                 </p>
               </Typing>
 
-          <hr className='bg-light'style={{width:'50%'}}/>
+          <hr className='bg-light animated fadeInUp slower delay-5s'style={{width:'50%'}}/>
 
           <NavLink to='/menu'>
             <button className='btn btn-large-block bg-primary nav-text text-light learn-more-button animated fadeInUp slower delay-5s'>
