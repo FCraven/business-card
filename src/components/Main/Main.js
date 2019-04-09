@@ -67,7 +67,7 @@ export default class Main extends Component {
 
       projects: [
         {
-          title: 'DropXR',
+          title: 'Drop',
           imageUrl: "https://www.youtube.com/embed/MWY60alDvVg",
           githubUrl:'https://github.com/dropar/drop',
           description:`A lean browser based progressive web application that pulls from Google's Poly to create an AR and VR experience`,
@@ -88,10 +88,10 @@ export default class Main extends Component {
           hasVideo: false
         },
         {
-          title: 'This App!',
+          title: 'This Page',
           imageUrl:'/moustacheSelfie.JPG',
           githubUrl:'https://github.com/FCraven/business-card',
-          description:`This is a single page application business card I built using CRA, React, React Router and Bootstrap.`,
+          description:`This is a mobile friendly, responsive single page application business card I built using CRA, React, React Router and Bootstrap.`,
           hasVideo: false
         },
         {
