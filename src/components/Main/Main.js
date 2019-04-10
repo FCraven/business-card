@@ -19,7 +19,7 @@ export default class Main extends Component {
        frontEnd: [
         {
             title: 'React',
-            imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
+            imageUrl: 'https://facebook.github.io/create-react-app/img/logo-og.png',
             shortDescription: 'A JavaScript library for building user interfaces',
             longDescription: 'React is maintained by Facebook and a community of developers. React is used as a  base in the development of single-page or mobile applications.',
             homepage: 'https://reactjs.org/'
@@ -92,7 +92,7 @@ export default class Main extends Component {
           title: 'This Page',
           imageUrl:'/moustacheSelfie.JPG',
           githubUrl:'https://github.com/FCraven/business-card',
-          description:`This is a mobile friendly, responsive single page application business card I built using CRA, React, React Router and Bootstrap.`,
+          description:`This is a responsive single page application. I built it using CRA, React, React Router and Bootstrap.`,
           hasVideo: false
         },
         {
