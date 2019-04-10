@@ -16,6 +16,7 @@ export default class Main extends Component {
     super(props)
 
     this.state = {
+
        frontEnd: {
           languages: [
             {
@@ -34,35 +35,42 @@ export default class Main extends Component {
             },
             {
               title:'JavaScript',
-              imageUrl:'http://www.acadecap.org/wp-content/uploads/2016/07/Javascript.png',
+              imageUrl:'https://png.pngtree.com/svg/20170719/91de50e59c.svg',
               shortDescription:'High level, interpreted programming language',
-              longDescription:`JavaScript is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles`,
+              longDescription:`JavaScript is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.`,
               homepage:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
             }
-
           ],
           libraries:[
             {
                 title: 'React',
-                imageUrl: 'https://facebook.github.io/create-react-app/img/logo-og.png',
+                imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
                 shortDescription: 'A JavaScript library for building user interfaces',
                 longDescription: 'React is maintained by Facebook and a community of developers. React is used as a  base in the development of single-page or mobile applications.',
                 homepage: 'https://reactjs.org/'
             },
             {
                 title: 'Redux',
-                imageUrl: 'https://www.brandeps.com/logo-download/R/Redux-01.png',
+                imageUrl: 'http://www.stickpng.com/assets/images/5848309bcef1014c0b5e4a9a.png',
                 shortDescription: 'A Predictable State Container for JS Apps',
                 longDescription: 'Redux is an open-source JavaScript library for managing application state. It is most  commonly used with libraries for building user interfaces.',
                 homepage: 'https://redux.js.org/'
             },
             {
               title: 'Bootstrap',
-              imageUrl: 'http://pluspng.com/img-png/bootstrap-logo-vector-png-bootstrap-logo-512.jpg',
+              imageUrl: 'http://pluspng.com/img-png/bootstrap-png-bootstrap-512.png',
               shortDescription: 'Styles for developing responsive, mobile-first design.',
-              longDescription: 'Bootstrap contains HTML and CSS-based design templates for typography, forms, buttons an d navigation, as well as optional JavaScript extensions.',
+              longDescription: 'Bootstrap contains HTML and CSS-based design templates for typography, forms, buttons and navigation, as well as optional JavaScript extensions.',
               homepage: 'https://www.getbootstrap.com/'
+            },
+            {
+              title: 'jQuery',
+              imageUrl: 'http://pluspng.com/img-png/jquery-logo-png-jquery-320.png',
+              shortDescription: 'DOM traversal and manipulation',
+              longDescription: 'jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.',
+              homepage: 'https://jquery.com/'
             }
+
           ]
     },
 
