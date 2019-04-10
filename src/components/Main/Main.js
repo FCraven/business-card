@@ -6,6 +6,7 @@ import Menu from './Menu'
 import Projects from './Projects'
 import TechStack from './TechStack'
 import Education from './Education'
+import FrontEnd from './TechStack/FrontEnd'
 
 
 
@@ -15,7 +16,7 @@ export default class Main extends Component {
     super(props)
 
     this.state = {
-       frontEndStack: [
+       frontEnd: [
         {
             title: 'React',
             imageUrl: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
@@ -117,6 +118,7 @@ export default class Main extends Component {
     const randomBackground = backgrounds[Math.floor(Math.random()*backgrounds.length)]
     const education = this.state.education
     const projects = this.state.projects
+    const frontEnd = this.state.frontEnd
 
     return (
 
@@ -133,6 +135,7 @@ export default class Main extends Component {
           <Route path='/projects' render={(props)=> <Projects projects={projects} />} />
           <Route path='/techstack' component={TechStack} />
           <Route path='/education' render={(props)=> <Education education={education} />} />
+          <Route path='/frontend' render={(props)=> <FrontEnd frontEnd={frontEnd} />} />
         </Switch>
 
       </div>
