@@ -92,32 +92,32 @@ export default class Main extends Component {
         {
         title:'PostgreSQL',
         imageUrl:'http://www.stickpng.com/assets/images/584815fdcef1014c0b5e497a.png',
-        shortDescription:'',
-        longDescription:'',
-        homepage:''
+        shortDescription:'Relational Database Management System',
+        longDescription:'PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance.',
+        homepage:'https://www.postgresql.org/'
       },
       {
         title:'SQL',
-        imageUrl:'',
-        shortDescription:'',
-        longDescription:'',
-        homepage:''
+        imageUrl:'http://www.free-icons-download.net/images/sql-file-icon-71677.png',
+        shortDescription:'Structured Query Language',
+        longDescription:'A domain-specific language used in programming and designed for managing data held in a relational database management system.',
+        homepage:'https://en.wikipedia.org/wiki/SQL'
       },
       {
         title:'Sequelize',
-        imageUrl:'',
-        shortDescription:'',
-        longDescription:'',
-        homepage:''
+        imageUrl:'http://www.stickpng.com/assets/images/58482ee4cef1014c0b5e4a75.png',
+        shortDescription:'Object Relational Mapping',
+        longDescription:'Sequelize is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server. It features solid transaction support, relations, eager and lazy loading, read replication and more.',
+        homepage:'http://docs.sequelizejs.com/'
       }
     ],
       server:[
         {
         title:'Express',
-        imageUrl:'',
-        shortDescription:'',
-        longDescription:'',
-        homepage:''
+        imageUrl:'https://buzz-prod-photos.global.ssl.fastly.net/img/06b9ed56-ced3-4078-bfc8-ca0055a69d61',
+        shortDescription:'Fast, unopinionated minimalist web framework for Node.js',
+        longDescription:'Express.js is a Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications. It is the de facto standard server framework for Node.js.',
+        homepage:'https://expressjs.com/'
       }
     ]
     },
