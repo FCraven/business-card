@@ -16,29 +16,55 @@ export default class Main extends Component {
     super(props)
 
     this.state = {
-       frontEnd: [
-        {
-            title: 'React',
-            imageUrl: 'https://facebook.github.io/create-react-app/img/logo-og.png',
-            shortDescription: 'A JavaScript library for building user interfaces',
-            longDescription: 'React is maintained by Facebook and a community of developers. React is used as a  base in the development of single-page or mobile applications.',
-            homepage: 'https://reactjs.org/'
-        },
-        {
-            title: 'Redux',
-            imageUrl: 'https://www.brandeps.com/logo-download/R/Redux-01.png',
-            shortDescription: 'A Predictable State Container for JS Apps',
-            longDescription: 'Redux is an open-source JavaScript library for managing application state. It is most  commonly used with libraries for building user interfaces.',
-            homepage: 'https://redux.js.org/'
-        },
-        {
-          title: 'Bootstrap',
-          imageUrl: 'http://pluspng.com/img-png/bootstrap-logo-vector-png-bootstrap-logo-512.jpg',
-          shortDescription: 'Styles for developing responsive, mobile-first design.',
-          longDescription: 'Bootstrap contains HTML and CSS-based design templates for typography, forms, buttons an d navigation, as well as optional JavaScript extensions.',
-          homepage: 'https://www.getbootstrap.com/'
-        }
-      ],
+       frontEnd: {
+          languages: [
+            {
+              title:'HTML',
+              imageUrl:'http://icons.iconarchive.com/icons/cornmanthe3rd/plex/256/Other-html-5-icon.png',
+              shortDescription:'Hypertext Markup Language',
+              longDescription:'The standard markup language for creating web pages and web applications.',
+              homepage:'https://developer.mozilla.org/en-US/docs/Web/HTML'
+            },
+            {
+              title:'CSS',
+              imageUrl:'https://png2.kisspng.com/sh/0c283fc92e52b8413928b432ad972788/L0KzQYm3VMAzN6lpiZH0aYP2gLBuTfN0e2Qye9N8Y3HnebBuTgN1gZ1qReVxZXX3g37qjB1xfaVqip9yY3Bxg37vlP1tNZZyet5ubT24cbS5VMVnOWE8edc8MT62QIK7UcAyPWI6SqQBOEG2Qoq3U8E2NqFzf3==/kisspng-css3-cascading-style-sheets-computer-icons-html-emblem-5ac245f107ae31.3014101515226813290315.png',
+              shortDescription:'Cascading Style Sheets',
+              longDescription:'A stylesheet language used to describe the presentation of a document written in HTML or XML.',
+              homepage:'https://developer.mozilla.org/en-US/docs/Web/CSS'
+            },
+            {
+              title:'JavaScript',
+              imageUrl:'http://www.acadecap.org/wp-content/uploads/2016/07/Javascript.png',
+              shortDescription:'High level, interpreted programming language',
+              longDescription:`JavaScript is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles`,
+              homepage:'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+            }
+
+          ],
+          libraries:[
+            {
+                title: 'React',
+                imageUrl: 'https://facebook.github.io/create-react-app/img/logo-og.png',
+                shortDescription: 'A JavaScript library for building user interfaces',
+                longDescription: 'React is maintained by Facebook and a community of developers. React is used as a  base in the development of single-page or mobile applications.',
+                homepage: 'https://reactjs.org/'
+            },
+            {
+                title: 'Redux',
+                imageUrl: 'https://www.brandeps.com/logo-download/R/Redux-01.png',
+                shortDescription: 'A Predictable State Container for JS Apps',
+                longDescription: 'Redux is an open-source JavaScript library for managing application state. It is most  commonly used with libraries for building user interfaces.',
+                homepage: 'https://redux.js.org/'
+            },
+            {
+              title: 'Bootstrap',
+              imageUrl: 'http://pluspng.com/img-png/bootstrap-logo-vector-png-bootstrap-logo-512.jpg',
+              shortDescription: 'Styles for developing responsive, mobile-first design.',
+              longDescription: 'Bootstrap contains HTML and CSS-based design templates for typography, forms, buttons an d navigation, as well as optional JavaScript extensions.',
+              homepage: 'https://www.getbootstrap.com/'
+            }
+          ]
+    },
 
       backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg'],
 
