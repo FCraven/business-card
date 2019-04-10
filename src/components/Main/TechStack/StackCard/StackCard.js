@@ -11,7 +11,7 @@ const StackCard =(props)=> {
                   className='card-img-top img-fluid bg-dark'
                   alt={props.title}
                   onClick={()=> window.open(``)}/>
-            <div className="card-block p-2">
+            <div className="card-body">
               <h3 className='card-title'>{props.title}</h3>
               <p className='text-muted card-subtitle mb-2'>{props.shortDescription}</p>
               <p>{props.longDescription}</p>

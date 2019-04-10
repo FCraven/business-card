@@ -20,12 +20,13 @@ console.log(`Front End Props -->`, props)
 
     <div className="container pt-3">
       <h2 className='text-center bg-primary rounded text-light w-50 mx-auto mt-5'>Languages</h2>
-      <div className="row justify-content-center pt-3">
 
-        {languageCards}
-      </div>
+        <div className="row justify-content-center pt-3">
+          {languageCards}
+        </div>
 
-        <h2 className='text-center bg-primary rounded text-light w-50 mx-auto mt-5'>Libraries</h2>
+      <h2 className='text-center bg-primary rounded text-light w-50 mx-auto mt-5'>Libraries</h2>
+
         <div className="row justify-content-center pt-3 pb-5">
         {libraryCards}
         </div>

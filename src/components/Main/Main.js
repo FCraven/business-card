@@ -7,6 +7,7 @@ import Projects from './Projects'
 import TechStack from './TechStack'
 import Education from './Education'
 import FrontEnd from './TechStack/FrontEnd'
+import BackEnd from './TechStack/BackEnd'
 
 
 
@@ -70,8 +71,55 @@ export default class Main extends Component {
               longDescription: 'jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.',
               homepage: 'https://jquery.com/'
             }
-
           ]
+    },
+    backEnd: {
+      architecture:{
+        title:'REST API',
+        imageUrl:'http://www.odoo.com/apps/icon_image?module_id=37657',
+        shortDescription:'Representational State Transfer',
+        longDescription:'A software architectural style that defines a set of constraints to be used for creating Web services. Web services that conform to the style provide interoperability between computer systems on the Internet.',
+        homepage:'https://restfulapi.net/'
+      },
+      runtime:{
+        title:'NodeJS',
+        imageUrl:'https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png',
+        shortDescription:`Built on Chrome's V8 JavaScript engine`,
+        longDescription:'Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser',
+        homepage:'https://nodejs.org/en/'
+      },
+      database:[
+        {
+        title:'PostgreSQL',
+        imageUrl:'http://www.stickpng.com/assets/images/584815fdcef1014c0b5e497a.png',
+        shortDescription:'',
+        longDescription:'',
+        homepage:''
+      },
+      {
+        title:'SQL',
+        imageUrl:'',
+        shortDescription:'',
+        longDescription:'',
+        homepage:''
+      },
+      {
+        title:'Sequelize',
+        imageUrl:'',
+        shortDescription:'',
+        longDescription:'',
+        homepage:''
+      }
+    ],
+      server:[
+        {
+        title:'Express',
+        imageUrl:'',
+        shortDescription:'',
+        longDescription:'',
+        homepage:''
+      }
+    ]
     },
 
       backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg'],
@@ -137,12 +185,6 @@ export default class Main extends Component {
           hasVideo: false
         }
       ]
-
-
-
-
-
-
     }
   }
 
@@ -153,6 +195,7 @@ export default class Main extends Component {
     const education = this.state.education
     const projects = this.state.projects
     const frontEnd = this.state.frontEnd
+    const backEnd = this.state.backEnd
 
     return (
 
@@ -170,6 +213,7 @@ export default class Main extends Component {
           <Route path='/techstack' component={TechStack} />
           <Route path='/education' render={(props)=> <Education education={education} />} />
           <Route path='/frontend' render={(props)=> <FrontEnd frontEnd={frontEnd} />} />
+          <Route path='/backend' render={(props)=> <BackEnd backEnd={backEnd} />} />
         </Switch>
 
       </div>
