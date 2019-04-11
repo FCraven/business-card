@@ -8,6 +8,7 @@ import TechStack from './TechStack'
 import Education from './Education'
 import FrontEnd from './TechStack/FrontEnd'
 import BackEnd from './TechStack/BackEnd'
+import OtherTech from './TechStack/OtherTech'
 
 
 
@@ -73,6 +74,7 @@ export default class Main extends Component {
             }
           ]
     },
+
     backEnd: {
       architecture:{
         title:'REST API',
@@ -119,8 +121,19 @@ export default class Main extends Component {
         longDescription:'Express.js is a Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications. It is the de facto standard server framework for Node.js.',
         homepage:'https://expressjs.com/'
       }
-    
+
     },
+
+      otherTech:[
+        {
+          title:'',
+          imageUrl:'',
+          shortDescription:'',
+          longDescription:'',
+          homepage:''
+        }
+      ]
+    ,
 
       backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg'],
 
@@ -196,6 +209,7 @@ export default class Main extends Component {
     const projects = this.state.projects
     const frontEnd = this.state.frontEnd
     const backEnd = this.state.backEnd
+    const otherTech = this.state.otherTech
 
     return (
 
@@ -214,6 +228,7 @@ export default class Main extends Component {
           <Route path='/education' render={(props)=> <Education education={education} />} />
           <Route path='/frontend' render={(props)=> <FrontEnd frontEnd={frontEnd} />} />
           <Route path='/backend' render={(props)=> <BackEnd backEnd={backEnd} />} />
+          <Route path='/othertech' render={(props)=> <OtherTech otherTech={otherTech} />} />
         </Switch>
 
       </div>
@@ -224,3 +239,4 @@ export default class Main extends Component {
     )
   }
 }
+//asdf
