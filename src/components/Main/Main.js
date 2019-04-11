@@ -111,7 +111,7 @@ export default class Main extends Component {
         homepage:'http://docs.sequelizejs.com/'
       }
     ],
-      server:[
+      server:
         {
         title:'Express',
         imageUrl:'https://buzz-prod-photos.global.ssl.fastly.net/img/06b9ed56-ced3-4078-bfc8-ca0055a69d61',
@@ -119,7 +119,7 @@ export default class Main extends Component {
         longDescription:'Express.js is a Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications. It is the de facto standard server framework for Node.js.',
         homepage:'https://expressjs.com/'
       }
-    ]
+    
     },
 
       backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg'],
