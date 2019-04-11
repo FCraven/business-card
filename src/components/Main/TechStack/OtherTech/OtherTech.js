@@ -10,3 +10,4 @@ const OtherTech =(props)=> {
   )
 }
 
+export default OtherTech
