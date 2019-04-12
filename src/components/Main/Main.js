@@ -126,11 +126,18 @@ export default class Main extends Component {
 
       otherTech:[
         {
-          title:'',
-          imageUrl:'',
-          shortDescription:'',
-          longDescription:'',
-          homepage:''
+          title:'Webpack',
+          imageUrl:'https://github.com/webpack/media/blob/master/logo/icon-square-small.png?raw=true',
+          shortDescription:'Static Module Bundler',
+          longDescription:'Webpack creates a dependency graph of modules your webapp requires to function. Depending on this graph, it creates a new package which consists of the very bare minimum number of files required, often just a single bundle.js file which can be plugged in to the html file easily and used for the application.',
+          homepage:'https://webpack.js.org/'
+        },
+        {
+        title:'Babel',
+        imageUrl:'https://i2.wp.com/endlessillusoft.com/wp-content/uploads/2017/01/babel.png?fit=700%2C318&ssl=1',
+        shortDescription:'JavaScript Compiler',
+        longDescription:'Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments',
+        homepage:'https://babeljs.io/'
         }
       ]
     ,
