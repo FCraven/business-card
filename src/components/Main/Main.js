@@ -135,7 +135,7 @@ export default class Main extends Component {
       ]
     ,
 
-      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg','/color-hero-background.jpeg', '/color-circles.jpeg','/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg','/romanesco.jpg'],
+      backgrounds: ['/hero-background.jpeg','/landing-page-background.jpeg', '/sanfran.jpeg','/waterfall.jpeg','/graffiti.jpg','/boardwalk.jpeg'],
 
       education:[
         {
