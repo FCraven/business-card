@@ -13,7 +13,7 @@ const Home =()=> {
                 <p className='text-light h4 p-1'><Typing.Delay ms={100} /> My name is Frank</p>
                 <p className='text-light h4'>
                   <Typing.Delay ms={1000}/>
-                      I'm a Full Stack Software Engineer
+                      I'm a Full Stack JavaScript Developer
                 </p>
               </Typing>
 
