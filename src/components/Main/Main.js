@@ -146,6 +146,14 @@ export default class Main extends Component {
           longDescription:'',
           homepage:''
           },
+          {
+            title:'Chai',
+            imageUrl:'',
+            shortDescription:'Testing',
+            longDescription:'',
+            homepage:''
+            },
+
 
       ]
     ,
