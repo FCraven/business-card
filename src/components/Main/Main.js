@@ -140,19 +140,26 @@ export default class Main extends Component {
         homepage:'https://babeljs.io/'
         },
         {
-          title:'Mocha',
-          imageUrl:'',
-          shortDescription:'Testing',
-          longDescription:'',
-          homepage:''
-          },
-          {
-            title:'Chai',
-            imageUrl:'',
-            shortDescription:'Testing',
-            longDescription:'',
-            homepage:''
-            },
+        title:'Mocha',
+        imageUrl:'',
+        shortDescription:'Testing',
+        longDescription:'',
+        homepage:''
+        },
+        {
+        title:'Chai',
+        imageUrl:'',
+        shortDescription:'Testing',
+        longDescription:'',
+        homepage:''
+        },
+        {
+        title:'Enzyme',
+        imageUrl:'',
+        shortDescription:'Testing React components',
+        longDescription:'',
+        homepage:''
+        },
 
 
       ]
