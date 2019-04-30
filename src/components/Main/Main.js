@@ -30,7 +30,7 @@ export default class Main extends Component {
             },
             {
               title:'CSS',
-              imageUrl:'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwie2_DwwPjhAhUOxVkKHYTnBWUQjRx6BAgBEAU&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ACSS3_logo_and_wordmark.svg&psig=AOvVaw17yVEEgDbJKnWnuL2jviME&ust=1556737401351547',
+              imageUrl:'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png',
               shortDescription:'Cascading Style Sheets',
               longDescription:'A stylesheet language used to describe the presentation of a document written in HTML or XML.',
               homepage:'https://developer.mozilla.org/en-US/docs/Web/CSS'
