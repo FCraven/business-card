@@ -187,6 +187,11 @@ export default class Navbar extends Component {
             </ul>
           </div>
         </nav>
+        <div>
+          <div>
+            Kill the boy Jon Snow
+          </div>
+        </div>
       </div>
     )
   }
